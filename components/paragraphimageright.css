@@ -1,0 +1,22 @@
+.paragraphWrapper{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+.image{
+    width: 30%;
+    height: 0%;
+    display:none;
+}
+
+h1 {
+    flex-basis:100%;
+}
+
+p {
+    margin: 10 auto;
+    max-width: 50em;
+    align-self: center;
+}
+
+/* On bigger screens make sure to change the image display */

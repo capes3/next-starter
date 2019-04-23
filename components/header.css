@@ -1,0 +1,28 @@
+.hamburgerContainer{
+ padding-right:10px;
+ color: white;
+}
+
+.menuIcon{
+ color: white;
+}
+
+.logo{
+    padding-left:10px;
+    color: white;
+}
+
+.headerWrapper{
+    width: 100%;
+    height: 50px;
+    background-color:black;
+    display:flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    box-shadow: 2.5px 2.5px 1.25px lightgrey;
+}
+
+.linkWrapper{
+    display:none;
+}
