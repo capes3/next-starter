@@ -43,7 +43,17 @@
 }
 
 .menuList___2ZlsW a {
-    border: 1px solid black;
+    border: 1px solid darkgray;
+    background-color:black;
+    text-decoration: none;
+    color: white;
+    padding: 5px;
+}
+.wrapper___3kmjn {
+    height:50px;
+    width: 100%;
+    color: white;
+    background-color:black;
 }
 .image___ohk0X{
     width:100%;
@@ -71,12 +81,5 @@ p {
 }
 
 /* On bigger screens make sure to change the image display */
-
-.wrapper___3kmjn {
-    height:50px;
-    width: 100%;
-    color: white;
-    background-color:black;
-}
 
 /*# sourceMappingURL=styles.chunk.css.map*/

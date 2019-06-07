@@ -5,7 +5,7 @@ import ParagraphImageRight from '../components/ParagraphImageRight'
 import Carousel from '../components/Carousel'
 import ContactFormMap from '../components/ContactFormMap'
 import Footer from '../components/Footer'
-
+import data from '../data/paragraphimageright.json'
 
 
 const Index = () => (
@@ -21,7 +21,7 @@ const Index = () => (
         </Head>
         <Header/>
         <Banner/>
-        <ParagraphImageRight/>
+        <ParagraphImageRight data={data}/>
         <Carousel/>
         <ContactFormMap/>
         <Footer/> 
