@@ -5,7 +5,6 @@ import ParagraphImageRight from '../components/ParagraphImageRight'
 import Carousel from '../components/Carousel'
 import ContactFormMap from '../components/ContactFormMap'
 import Footer from '../components/Footer'
-import json from '../data/carousel.json'
 
 
 
@@ -23,9 +22,9 @@ const Index = () => (
         <Header/>
         <Banner/>
         <ParagraphImageRight/>
-        <Carousel data={json.data}/>
-        {/*<ContactFormMap/>
-        <Footer/>  */}
+        <Carousel/>
+        <ContactFormMap/>
+        <Footer/> 
 
     </div>
 )

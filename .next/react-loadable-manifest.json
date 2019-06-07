@@ -29,6 +29,12 @@
       "publicPath": "static/chunks/styles.js"
     },
     {
+      "id": 4,
+      "name": null,
+      "file": "static/chunks/styles.js",
+      "publicPath": "static/chunks/styles.js"
+    },
+    {
       "id": 5,
       "name": null,
       "file": "static/chunks/styles.js",
@@ -37,6 +43,28 @@
     {
       "id": 6,
       "name": null,
+      "file": "static/chunks/styles.js",
+      "publicPath": "static/chunks/styles.js"
+    },
+    {
+      "id": 8,
+      "name": null,
+      "file": "static/chunks/styles.js",
+      "publicPath": "static/chunks/styles.js"
+    }
+  ],
+  "../components/banner.css": [
+    {
+      "id": "./components/banner.css",
+      "name": "./components/banner.css",
+      "file": "static/chunks/styles.js",
+      "publicPath": "static/chunks/styles.js"
+    }
+  ],
+  "../components/carousel.css": [
+    {
+      "id": "./components/carousel.css",
+      "name": "./components/carousel.css",
       "file": "static/chunks/styles.js",
       "publicPath": "static/chunks/styles.js"
     }
@@ -49,10 +77,10 @@
       "publicPath": "static/chunks/styles.js"
     }
   ],
-  "../components/banner.css": [
+  "./footer.css": [
     {
-      "id": "./components/banner.css",
-      "name": "./components/banner.css",
+      "id": "./components/footer.css",
+      "name": "./components/footer.css",
       "file": "static/chunks/styles.js",
       "publicPath": "static/chunks/styles.js"
     }
