@@ -3,13 +3,19 @@ import css from '../components/paragraphimageright.css'
 
 
 class ParagraphImageRight extends React.Component{
+constructor(props){
+    super(props)
+}
 
-    render(){
-        console.log(this.props.data.data[0].content)
+
+
+    render(props){
+        const index = this.props
+        console.log(index)
         return(
             <div className={css.paragraphWrapper}>
-                <h1>About Us</h1>
-                <p>{this.props.data.data[0].content}</p>
+                <h1>{this.props.data.data[this.props.id].title}</h1>
+                <p>{this.props.data.data[this.props.id].content}</p>
                 <img className={css.image} src={this.props.data.data[0].image}/>
             </div>
         )

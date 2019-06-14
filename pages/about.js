@@ -3,7 +3,9 @@ import Footer from '../components/Footer'
 import Head from 'next/head'
 import Banner from '../components/Banner'
 import ParagraphImageRight from '../components/ParagraphImageRight'
+import Accordian from '../components/Accordian'
 import data from '../data/paragraphimageright.json'
+import accordianData from '../data/accordian.json'
 
 
 const About = () => (
@@ -19,8 +21,8 @@ const About = () => (
         </Head>
         <Header/>
         <Banner/>
-        <ParagraphImageRight data={data}/>
-        {/* We're going to have to pass props to the above component.  So we'll import data into this component and pass it to ParagraphImageRight */}
+        <ParagraphImageRight data={data} id={1}/>
+        <Accordian/>
         <Footer/>
     </div>
 )

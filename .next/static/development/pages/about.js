@@ -1,5 +1,33 @@
 ((window["webpackJsonp"] = window["webpackJsonp"] || []).push([["static\\development\\pages\\about.js"],{
 
+/***/ "./components/Accordian.js":
+/*!*********************************!*\
+  !*** ./components/Accordian.js ***!
+  \*********************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ "./node_modules/react/index.js");
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);
+var _jsxFileName = "C:\\Users\\capen\\Desktop\\WorkProjects\\next-js-starter\\components\\Accordian.js";
+
+
+var Accordian = function Accordian() {
+  return react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 2
+    },
+    __self: this
+  }, "Hello World Accordian here");
+};
+
+/* harmony default export */ __webpack_exports__["default"] = (Accordian);
+
+/***/ }),
+
 /***/ "./components/Banner.js":
 /*!******************************!*\
   !*** ./components/Banner.js ***!
@@ -566,41 +594,42 @@ var ParagraphImageRight =
 function (_React$Component) {
   Object(_babel_runtime_corejs2_helpers_esm_inherits__WEBPACK_IMPORTED_MODULE_4__["default"])(ParagraphImageRight, _React$Component);
 
-  function ParagraphImageRight() {
+  function ParagraphImageRight(props) {
     Object(_babel_runtime_corejs2_helpers_esm_classCallCheck__WEBPACK_IMPORTED_MODULE_0__["default"])(this, ParagraphImageRight);
 
-    return Object(_babel_runtime_corejs2_helpers_esm_possibleConstructorReturn__WEBPACK_IMPORTED_MODULE_2__["default"])(this, Object(_babel_runtime_corejs2_helpers_esm_getPrototypeOf__WEBPACK_IMPORTED_MODULE_3__["default"])(ParagraphImageRight).apply(this, arguments));
+    return Object(_babel_runtime_corejs2_helpers_esm_possibleConstructorReturn__WEBPACK_IMPORTED_MODULE_2__["default"])(this, Object(_babel_runtime_corejs2_helpers_esm_getPrototypeOf__WEBPACK_IMPORTED_MODULE_3__["default"])(ParagraphImageRight).call(this, props));
   }
 
   Object(_babel_runtime_corejs2_helpers_esm_createClass__WEBPACK_IMPORTED_MODULE_1__["default"])(ParagraphImageRight, [{
     key: "render",
-    value: function render() {
-      console.log(this.props.data.data[0].content);
+    value: function render(props) {
+      var index = this.props;
+      console.log(index);
       return react__WEBPACK_IMPORTED_MODULE_5___default.a.createElement("div", {
         className: _components_paragraphimageright_css__WEBPACK_IMPORTED_MODULE_6___default.a.paragraphWrapper,
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 10
+          lineNumber: 16
         },
         __self: this
       }, react__WEBPACK_IMPORTED_MODULE_5___default.a.createElement("h1", {
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 11
+          lineNumber: 17
         },
         __self: this
-      }, "About Us"), react__WEBPACK_IMPORTED_MODULE_5___default.a.createElement("p", {
+      }, this.props.data.data[this.props.id].title), react__WEBPACK_IMPORTED_MODULE_5___default.a.createElement("p", {
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 12
+          lineNumber: 18
         },
         __self: this
-      }, this.props.data.data[0].content), react__WEBPACK_IMPORTED_MODULE_5___default.a.createElement("img", {
+      }, this.props.data.data[this.props.id].content), react__WEBPACK_IMPORTED_MODULE_5___default.a.createElement("img", {
         className: _components_paragraphimageright_css__WEBPACK_IMPORTED_MODULE_6___default.a.image,
         src: this.props.data.data[0].image,
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 13
+          lineNumber: 19
         },
         __self: this
       }));
@@ -611,6 +640,17 @@ function (_React$Component) {
 }(react__WEBPACK_IMPORTED_MODULE_5___default.a.Component);
 
 /* harmony default export */ __webpack_exports__["default"] = (ParagraphImageRight);
+
+/***/ }),
+
+/***/ "./data/accordian.json":
+/*!*****************************!*\
+  !*** ./data/accordian.json ***!
+  \*****************************/
+/*! exports provided: title, default */
+/***/ (function(module) {
+
+module.exports = {"title":[{"title":"Title","content":"Content"},{"title":"Title","content":"Content"},{"title":"Title","content":"Content"}]};
 
 /***/ }),
 
@@ -632,7 +672,7 @@ module.exports = {"data":[{"id":1,"name":"Home","href":"/"},{"id":2,"name":"Abou
 /*! exports provided: data, default */
 /***/ (function(module) {
 
-module.exports = {"data":[{"id":1,"content":"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.","image":"https://picsum.photos/id/785/1600/400?blur=2"}]};
+module.exports = {"data":[{"id":0,"title":"Title","content":"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.","image":"https://picsum.photos/id/785/1600/400?blur=2"},{"id":1,"title":"Title","content":"1Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.","image":"https://picsum.photos/id/785/1600/400?blur=2"}]};
 
 /***/ }),
 
@@ -11209,9 +11249,14 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var next_server_head__WEBPACK_IMPORTED_MODULE_3___default = /*#__PURE__*/__webpack_require__.n(next_server_head__WEBPACK_IMPORTED_MODULE_3__);
 /* harmony import */ var _components_Banner__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ../components/Banner */ "./components/Banner.js");
 /* harmony import */ var _components_ParagraphImageRight__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! ../components/ParagraphImageRight */ "./components/ParagraphImageRight.js");
-/* harmony import */ var _data_paragraphimageright_json__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! ../data/paragraphimageright.json */ "./data/paragraphimageright.json");
-var _data_paragraphimageright_json__WEBPACK_IMPORTED_MODULE_6___namespace = /*#__PURE__*/__webpack_require__.t(/*! ../data/paragraphimageright.json */ "./data/paragraphimageright.json", 1);
+/* harmony import */ var _components_Accordian__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! ../components/Accordian */ "./components/Accordian.js");
+/* harmony import */ var _data_paragraphimageright_json__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(/*! ../data/paragraphimageright.json */ "./data/paragraphimageright.json");
+var _data_paragraphimageright_json__WEBPACK_IMPORTED_MODULE_7___namespace = /*#__PURE__*/__webpack_require__.t(/*! ../data/paragraphimageright.json */ "./data/paragraphimageright.json", 1);
+/* harmony import */ var _data_accordian_json__WEBPACK_IMPORTED_MODULE_8__ = __webpack_require__(/*! ../data/accordian.json */ "./data/accordian.json");
+var _data_accordian_json__WEBPACK_IMPORTED_MODULE_8___namespace = /*#__PURE__*/__webpack_require__.t(/*! ../data/accordian.json */ "./data/accordian.json", 1);
 var _jsxFileName = "C:\\Users\\capen\\Desktop\\WorkProjects\\next-js-starter\\pages\\about.js";
+
+
 
 
 
@@ -11224,19 +11269,19 @@ var About = function About() {
   return react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 10
+      lineNumber: 12
     },
     __self: this
   }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(next_server_head__WEBPACK_IMPORTED_MODULE_3___default.a, {
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 11
+      lineNumber: 13
     },
     __self: this
   }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("style", {
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 12
+      lineNumber: 14
     },
     __self: this
   }, "\n                body {\n                margin: 0;\n                }"), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("meta", {
@@ -11244,32 +11289,39 @@ var About = function About() {
     content: "width=device-width, initial-scale=1",
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 18
+      lineNumber: 20
     },
     __self: this
   })), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_components_Header__WEBPACK_IMPORTED_MODULE_1__["default"], {
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 20
+      lineNumber: 22
     },
     __self: this
   }), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_components_Banner__WEBPACK_IMPORTED_MODULE_4__["default"], {
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 21
+      lineNumber: 23
     },
     __self: this
   }), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_components_ParagraphImageRight__WEBPACK_IMPORTED_MODULE_5__["default"], {
-    data: _data_paragraphimageright_json__WEBPACK_IMPORTED_MODULE_6__,
+    data: _data_paragraphimageright_json__WEBPACK_IMPORTED_MODULE_7__,
+    id: 1,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 22
+      lineNumber: 24
+    },
+    __self: this
+  }), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_components_Accordian__WEBPACK_IMPORTED_MODULE_6__["default"], {
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 25
     },
     __self: this
   }), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_components_Footer__WEBPACK_IMPORTED_MODULE_2__["default"], {
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 24
+      lineNumber: 26
     },
     __self: this
   }));
