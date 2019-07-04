@@ -21,8 +21,9 @@ const About = () => (
         </Head>
         <Header/>
         <Banner/>
+        <ParagraphImageRight data={data} id={0}/>
         <ParagraphImageRight data={data} id={1}/>
-        <Accordian/>
+        <Accordian data={accordianData}/>
         <Footer/>
     </div>
 )

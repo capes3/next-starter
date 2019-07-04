@@ -21,7 +21,7 @@ const Index = () => (
         </Head>
         <Header/>
         <Banner/>
-        <ParagraphImageRight data={data} index={0}/>
+        <ParagraphImageRight data={data} id={0}/>
         <Carousel/>
         <ContactFormMap/>
         <Footer/> 

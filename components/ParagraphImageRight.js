@@ -2,6 +2,7 @@ import React from 'react'
 import css from '../components/paragraphimageright.css'
 
 
+
 class ParagraphImageRight extends React.Component{
 constructor(props){
     super(props)
@@ -11,7 +12,6 @@ constructor(props){
 
     render(props){
         const index = this.props
-        console.log(index)
         return(
             <div className={css.paragraphWrapper}>
                 <h1>{this.props.data.data[this.props.id].title}</h1>

@@ -9,20 +9,135 @@
 
 "use strict";
 __webpack_require__.r(__webpack_exports__);
-/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ "./node_modules/react/index.js");
-/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);
+/* harmony import */ var _babel_runtime_corejs2_helpers_esm_assertThisInitialized__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! @babel/runtime-corejs2/helpers/esm/assertThisInitialized */ "./node_modules/@babel/runtime-corejs2/helpers/esm/assertThisInitialized.js");
+/* harmony import */ var _babel_runtime_corejs2_helpers_esm_defineProperty__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! @babel/runtime-corejs2/helpers/esm/defineProperty */ "./node_modules/@babel/runtime-corejs2/helpers/esm/defineProperty.js");
+/* harmony import */ var _babel_runtime_corejs2_helpers_esm_classCallCheck__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! @babel/runtime-corejs2/helpers/esm/classCallCheck */ "./node_modules/@babel/runtime-corejs2/helpers/esm/classCallCheck.js");
+/* harmony import */ var _babel_runtime_corejs2_helpers_esm_createClass__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! @babel/runtime-corejs2/helpers/esm/createClass */ "./node_modules/@babel/runtime-corejs2/helpers/esm/createClass.js");
+/* harmony import */ var _babel_runtime_corejs2_helpers_esm_possibleConstructorReturn__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! @babel/runtime-corejs2/helpers/esm/possibleConstructorReturn */ "./node_modules/@babel/runtime-corejs2/helpers/esm/possibleConstructorReturn.js");
+/* harmony import */ var _babel_runtime_corejs2_helpers_esm_getPrototypeOf__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! @babel/runtime-corejs2/helpers/esm/getPrototypeOf */ "./node_modules/@babel/runtime-corejs2/helpers/esm/getPrototypeOf.js");
+/* harmony import */ var _babel_runtime_corejs2_helpers_esm_inherits__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! @babel/runtime-corejs2/helpers/esm/inherits */ "./node_modules/@babel/runtime-corejs2/helpers/esm/inherits.js");
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(/*! react */ "./node_modules/react/index.js");
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_7___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_7__);
+
+
+
+
+
+
+
 var _jsxFileName = "C:\\Users\\capen\\Desktop\\WorkProjects\\next-js-starter\\components\\Accordian.js";
 
 
-var Accordian = function Accordian() {
-  return react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 2
-    },
-    __self: this
-  }, "Hello World Accordian here");
-};
+var Accordian =
+/*#__PURE__*/
+function (_React$Component) {
+  Object(_babel_runtime_corejs2_helpers_esm_inherits__WEBPACK_IMPORTED_MODULE_6__["default"])(Accordian, _React$Component);
+
+  function Accordian(props) {
+    Object(_babel_runtime_corejs2_helpers_esm_classCallCheck__WEBPACK_IMPORTED_MODULE_2__["default"])(this, Accordian);
+
+    return Object(_babel_runtime_corejs2_helpers_esm_possibleConstructorReturn__WEBPACK_IMPORTED_MODULE_4__["default"])(this, Object(_babel_runtime_corejs2_helpers_esm_getPrototypeOf__WEBPACK_IMPORTED_MODULE_5__["default"])(Accordian).call(this, props));
+  }
+
+  Object(_babel_runtime_corejs2_helpers_esm_createClass__WEBPACK_IMPORTED_MODULE_3__["default"])(Accordian, [{
+    key: "render",
+    value: function render() {
+      var titleArray = this.props.data.title;
+      return react__WEBPACK_IMPORTED_MODULE_7___default.a.createElement("div", {
+        className: "message-box",
+        __source: {
+          fileName: _jsxFileName,
+          lineNumber: 11
+        },
+        __self: this
+      }, titleArray.map(function (object, i) {
+        return react__WEBPACK_IMPORTED_MODULE_7___default.a.createElement("div", {
+          __source: {
+            fileName: _jsxFileName,
+            lineNumber: 13
+          },
+          __self: this
+        }, react__WEBPACK_IMPORTED_MODULE_7___default.a.createElement(AccordianItem, {
+          title: object,
+          key: i,
+          __source: {
+            fileName: _jsxFileName,
+            lineNumber: 14
+          },
+          __self: this
+        }));
+      }));
+    }
+  }]);
+
+  return Accordian;
+}(react__WEBPACK_IMPORTED_MODULE_7___default.a.Component);
+
+var AccordianItem =
+/*#__PURE__*/
+function (_React$Component2) {
+  Object(_babel_runtime_corejs2_helpers_esm_inherits__WEBPACK_IMPORTED_MODULE_6__["default"])(AccordianItem, _React$Component2);
+
+  function AccordianItem(props) {
+    var _this;
+
+    Object(_babel_runtime_corejs2_helpers_esm_classCallCheck__WEBPACK_IMPORTED_MODULE_2__["default"])(this, AccordianItem);
+
+    _this = Object(_babel_runtime_corejs2_helpers_esm_possibleConstructorReturn__WEBPACK_IMPORTED_MODULE_4__["default"])(this, Object(_babel_runtime_corejs2_helpers_esm_getPrototypeOf__WEBPACK_IMPORTED_MODULE_5__["default"])(AccordianItem).call(this, props));
+
+    Object(_babel_runtime_corejs2_helpers_esm_defineProperty__WEBPACK_IMPORTED_MODULE_1__["default"])(Object(_babel_runtime_corejs2_helpers_esm_assertThisInitialized__WEBPACK_IMPORTED_MODULE_0__["default"])(_this), "toggleContent", function () {
+      _this.setState(function (prevState) {
+        return {
+          isOpen: !prevState.isOpen
+        };
+      });
+    });
+
+    _this.state = {
+      isOpen: false
+    };
+    return _this;
+  }
+
+  Object(_babel_runtime_corejs2_helpers_esm_createClass__WEBPACK_IMPORTED_MODULE_3__["default"])(AccordianItem, [{
+    key: "render",
+    value: function render() {
+      if (this.state.isOpen === true) {
+        return react__WEBPACK_IMPORTED_MODULE_7___default.a.createElement("div", {
+          __source: {
+            fileName: _jsxFileName,
+            lineNumber: 35
+          },
+          __self: this
+        }, react__WEBPACK_IMPORTED_MODULE_7___default.a.createElement("div", {
+          onClick: this.toggleContent,
+          __source: {
+            fileName: _jsxFileName,
+            lineNumber: 36
+          },
+          __self: this
+        }, this.props.title.title), react__WEBPACK_IMPORTED_MODULE_7___default.a.createElement("div", {
+          __source: {
+            fileName: _jsxFileName,
+            lineNumber: 37
+          },
+          __self: this
+        }, this.props.title.content));
+      } else {
+        return react__WEBPACK_IMPORTED_MODULE_7___default.a.createElement("div", {
+          onClick: this.toggleContent,
+          __source: {
+            fileName: _jsxFileName,
+            lineNumber: 40
+          },
+          __self: this
+        }, this.props.title.title);
+      }
+    }
+  }]);
+
+  return AccordianItem;
+}(react__WEBPACK_IMPORTED_MODULE_7___default.a.Component);
 
 /* harmony default export */ __webpack_exports__["default"] = (Accordian);
 
@@ -604,7 +719,6 @@ function (_React$Component) {
     key: "render",
     value: function render(props) {
       var index = this.props;
-      console.log(index);
       return react__WEBPACK_IMPORTED_MODULE_5___default.a.createElement("div", {
         className: _components_paragraphimageright_css__WEBPACK_IMPORTED_MODULE_6___default.a.paragraphWrapper,
         __source: {
@@ -650,7 +764,7 @@ function (_React$Component) {
 /*! exports provided: title, default */
 /***/ (function(module) {
 
-module.exports = {"title":[{"title":"Title","content":"Content"},{"title":"Title","content":"Content"},{"title":"Title","content":"Content"}]};
+module.exports = {"title":[{"title":"Title1","content":"Content for the 0 index"},{"title":"Title2","content":"Content for the 1 index"},{"title":"Title3","content":"Content for the 2 index"},{"title":"Title4","content":"Content for the 3 index"}]};
 
 /***/ }),
 
@@ -661,7 +775,7 @@ module.exports = {"title":[{"title":"Title","content":"Content"},{"title":"Title
 /*! exports provided: data, default */
 /***/ (function(module) {
 
-module.exports = {"data":[{"id":1,"name":"Home","href":"/"},{"id":2,"name":"About","href":"/about"},{"id":3,"name":"Contact","href":"/contact"},{"id":4,"name":"Services","href":"/services"}]};
+module.exports = {"data":[{"id":1,"name":"Home","href":"/"},{"id":2,"name":"About","href":"/about"},{"id":3,"name":"Contact","href":"/contact"},{"id":4,"name":"Services","href":"/services"},{"id":5,"name":"Projects","href":"/projects"}]};
 
 /***/ }),
 
@@ -11306,22 +11420,31 @@ var About = function About() {
     __self: this
   }), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_components_ParagraphImageRight__WEBPACK_IMPORTED_MODULE_5__["default"], {
     data: _data_paragraphimageright_json__WEBPACK_IMPORTED_MODULE_7__,
-    id: 1,
+    id: 0,
     __source: {
       fileName: _jsxFileName,
       lineNumber: 24
     },
     __self: this
-  }), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_components_Accordian__WEBPACK_IMPORTED_MODULE_6__["default"], {
+  }), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_components_ParagraphImageRight__WEBPACK_IMPORTED_MODULE_5__["default"], {
+    data: _data_paragraphimageright_json__WEBPACK_IMPORTED_MODULE_7__,
+    id: 1,
     __source: {
       fileName: _jsxFileName,
       lineNumber: 25
     },
     __self: this
-  }), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_components_Footer__WEBPACK_IMPORTED_MODULE_2__["default"], {
+  }), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_components_Accordian__WEBPACK_IMPORTED_MODULE_6__["default"], {
+    data: _data_accordian_json__WEBPACK_IMPORTED_MODULE_8__,
     __source: {
       fileName: _jsxFileName,
       lineNumber: 26
+    },
+    __self: this
+  }), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_components_Footer__WEBPACK_IMPORTED_MODULE_2__["default"], {
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 27
     },
     __self: this
   }));
@@ -11331,7 +11454,7 @@ var About = function About() {
 
 /***/ }),
 
-/***/ 9:
+/***/ 10:
 /*!********************************************************************************************************************************************************!*\
   !*** multi next-client-pages-loader?page=%2Fabout&absolutePagePath=C%3A%5CUsers%5Ccapen%5CDesktop%5CWorkProjects%5Cnext-js-starter%5Cpages%5Cabout.js ***!
   \********************************************************************************************************************************************************/
@@ -11354,5 +11477,5 @@ module.exports = dll_bed7e68b081ee2342acd;
 
 /***/ })
 
-},[[9,"static/runtime/webpack.js","styles"]]]));;
+},[[10,"static/runtime/webpack.js","styles"]]]));;
 //# sourceMappingURL=about.js.map
