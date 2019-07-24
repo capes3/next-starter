@@ -88,7 +88,7 @@ module.exports =
 /******/
 /******/
 /******/ 	// Load entry module and return exports
-/******/ 	return __webpack_require__(__webpack_require__.s = 6);
+/******/ 	return __webpack_require__(__webpack_require__.s = 4);
 /******/ })
 /************************************************************************/
 /******/ ({
@@ -111,6 +111,8 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _babel_runtime_corejs2_helpers_esm_inherits__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! @babel/runtime-corejs2/helpers/esm/inherits */ "./node_modules/@babel/runtime-corejs2/helpers/esm/inherits.js");
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(/*! react */ "react");
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_7___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_7__);
+/* harmony import */ var _components_accordian_css__WEBPACK_IMPORTED_MODULE_8__ = __webpack_require__(/*! ../components/accordian.css */ "./components/accordian.css");
+/* harmony import */ var _components_accordian_css__WEBPACK_IMPORTED_MODULE_8___default = /*#__PURE__*/__webpack_require__.n(_components_accordian_css__WEBPACK_IMPORTED_MODULE_8__);
 
 
 
@@ -119,6 +121,7 @@ __webpack_require__.r(__webpack_exports__);
 
 
 var _jsxFileName = "C:\\Users\\capen\\Desktop\\WorkProjects\\next-js-starter\\components\\Accordian.js";
+
 
 
 var Accordian =
@@ -137,17 +140,25 @@ function (_React$Component) {
     value: function render() {
       var titleArray = this.props.data.title;
       return react__WEBPACK_IMPORTED_MODULE_7___default.a.createElement("div", {
-        className: "message-box",
+        className: _components_accordian_css__WEBPACK_IMPORTED_MODULE_8___default.a.wrapper,
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 11
+          lineNumber: 12
         },
         __self: this
-      }, titleArray.map(function (object, i) {
+      }, react__WEBPACK_IMPORTED_MODULE_7___default.a.createElement("div", {
+        className: _components_accordian_css__WEBPACK_IMPORTED_MODULE_8___default.a.title,
+        __source: {
+          fileName: _jsxFileName,
+          lineNumber: 13
+        },
+        __self: this
+      }, "FAQ"), titleArray.map(function (object, i) {
         return react__WEBPACK_IMPORTED_MODULE_7___default.a.createElement("div", {
+          className: _components_accordian_css__WEBPACK_IMPORTED_MODULE_8___default.a.item,
           __source: {
             fileName: _jsxFileName,
-            lineNumber: 13
+            lineNumber: 15
           },
           __self: this
         }, react__WEBPACK_IMPORTED_MODULE_7___default.a.createElement(AccordianItem, {
@@ -155,7 +166,7 @@ function (_React$Component) {
           key: i,
           __source: {
             fileName: _jsxFileName,
-            lineNumber: 14
+            lineNumber: 16
           },
           __self: this
         }));
@@ -197,31 +208,34 @@ function (_React$Component2) {
     value: function render() {
       if (this.state.isOpen === true) {
         return react__WEBPACK_IMPORTED_MODULE_7___default.a.createElement("div", {
-          __source: {
-            fileName: _jsxFileName,
-            lineNumber: 35
-          },
-          __self: this
-        }, react__WEBPACK_IMPORTED_MODULE_7___default.a.createElement("div", {
-          onClick: this.toggleContent,
-          __source: {
-            fileName: _jsxFileName,
-            lineNumber: 36
-          },
-          __self: this
-        }, this.props.title.title), react__WEBPACK_IMPORTED_MODULE_7___default.a.createElement("div", {
+          className: _components_accordian_css__WEBPACK_IMPORTED_MODULE_8___default.a.itemWrapper,
           __source: {
             fileName: _jsxFileName,
             lineNumber: 37
           },
           __self: this
-        }, this.props.title.content));
-      } else {
-        return react__WEBPACK_IMPORTED_MODULE_7___default.a.createElement("div", {
+        }, react__WEBPACK_IMPORTED_MODULE_7___default.a.createElement("div", {
+          className: _components_accordian_css__WEBPACK_IMPORTED_MODULE_8___default.a.itemTitle,
           onClick: this.toggleContent,
           __source: {
             fileName: _jsxFileName,
-            lineNumber: 40
+            lineNumber: 38
+          },
+          __self: this
+        }, this.props.title.title), react__WEBPACK_IMPORTED_MODULE_7___default.a.createElement("div", {
+          __source: {
+            fileName: _jsxFileName,
+            lineNumber: 39
+          },
+          __self: this
+        }, this.props.title.content));
+      } else {
+        return react__WEBPACK_IMPORTED_MODULE_7___default.a.createElement("div", {
+          className: _components_accordian_css__WEBPACK_IMPORTED_MODULE_8___default.a.itemTitle,
+          onClick: this.toggleContent,
+          __source: {
+            fileName: _jsxFileName,
+            lineNumber: 42
           },
           __self: this
         }, this.props.title.title);
@@ -278,9 +292,10 @@ function (_React$Component) {
     key: "render",
     value: function render() {
       return react__WEBPACK_IMPORTED_MODULE_5___default.a.createElement("div", {
+        className: _components_banner_css__WEBPACK_IMPORTED_MODULE_6___default.a.bannerWrapper,
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 8
+          lineNumber: 7
         },
         __self: this
       }, react__WEBPACK_IMPORTED_MODULE_5___default.a.createElement("img", {
@@ -288,10 +303,17 @@ function (_React$Component) {
         src: '../static/image-one.jpg',
         __source: {
           fileName: _jsxFileName,
+          lineNumber: 8
+        },
+        __self: this
+      }), react__WEBPACK_IMPORTED_MODULE_5___default.a.createElement("div", {
+        className: _components_banner_css__WEBPACK_IMPORTED_MODULE_6___default.a.title,
+        __source: {
+          fileName: _jsxFileName,
           lineNumber: 9
         },
         __self: this
-      }));
+      }, this.props.text));
     }
   }]);
 
@@ -813,7 +835,7 @@ function (_React$Component) {
     value: function render(props) {
       var index = this.props;
       return react__WEBPACK_IMPORTED_MODULE_5___default.a.createElement("div", {
-        className: _components_paragraphimageright_css__WEBPACK_IMPORTED_MODULE_6___default.a.paragraphWrapper,
+        className: this.props.className,
         __source: {
           fileName: _jsxFileName,
           lineNumber: 16
@@ -850,6 +872,23 @@ function (_React$Component) {
 
 /***/ }),
 
+/***/ "./components/accordian.css":
+/*!**********************************!*\
+  !*** ./components/accordian.css ***!
+  \**********************************/
+/*! no static exports found */
+/***/ (function(module, exports) {
+
+module.exports = {
+	"wrapper": "wrapper___3yMX7",
+	"title": "title___1nf0U",
+	"item": "item___3byWd",
+	"itemWrapper": "itemWrapper___1iU0Q",
+	"itemTitle": "itemTitle___olevx"
+};
+
+/***/ }),
+
 /***/ "./components/banner.css":
 /*!*******************************!*\
   !*** ./components/banner.css ***!
@@ -858,6 +897,8 @@ function (_React$Component) {
 /***/ (function(module, exports) {
 
 module.exports = {
+	"bannerWrapper": "bannerWrapper___1QVkh",
+	"title": "title___lHFqs",
 	"image": "image___ohk0X"
 };
 
@@ -888,9 +929,7 @@ module.exports = {
 	"menuIcon": "menuIcon___CXDdv",
 	"logo": "logo___2qumV",
 	"headerWrapper": "headerWrapper___snjFD",
-	"linkWrapper": "linkWrapper___3hNju",
-	"menuList": "menuList___1s86S",
-	"open": "open___2CvLD"
+	"linkWrapper": "linkWrapper___3hNju"
 };
 
 /***/ }),
@@ -916,8 +955,11 @@ module.exports = {
 /***/ (function(module, exports) {
 
 module.exports = {
-	"paragraphWrapper": "paragraphWrapper___33gWU",
-	"image": "image___tZI0z"
+	"paragraphWrapper0": "paragraphWrapper0___3-2YW",
+	"image": "image___tZI0z",
+	"title0": "title0___WGDF2",
+	"firstParagraph": "firstParagraph___3xpkS",
+	"secondParagraph": "secondParagraph___1vHqp"
 };
 
 /***/ }),
@@ -951,7 +993,7 @@ module.exports = {"data":[{"id":1,"name":"Home","href":"/"},{"id":2,"name":"Abou
 /*! exports provided: data, default */
 /***/ (function(module) {
 
-module.exports = {"data":[{"id":0,"title":"Title","content":"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.","image":"https://picsum.photos/id/785/1600/400?blur=2"},{"id":1,"title":"Title","content":"1Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.","image":"https://picsum.photos/id/785/1600/400?blur=2"}]};
+module.exports = {"data":[{"id":0,"title":"Title for the first","content":"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.","image":"https://picsum.photos/id/785/1600/400?blur=2"},{"id":1,"title":"Title for the second","content":"1Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.","image":"https://picsum.photos/id/785/1600/400?blur=2"}]};
 
 /***/ }),
 
@@ -2196,7 +2238,10 @@ __webpack_require__.r(__webpack_exports__);
 var _data_paragraphimageright_json__WEBPACK_IMPORTED_MODULE_7___namespace = /*#__PURE__*/__webpack_require__.t(/*! ../data/paragraphimageright.json */ "./data/paragraphimageright.json", 1);
 /* harmony import */ var _data_accordian_json__WEBPACK_IMPORTED_MODULE_8__ = __webpack_require__(/*! ../data/accordian.json */ "./data/accordian.json");
 var _data_accordian_json__WEBPACK_IMPORTED_MODULE_8___namespace = /*#__PURE__*/__webpack_require__.t(/*! ../data/accordian.json */ "./data/accordian.json", 1);
+/* harmony import */ var _components_paragraphimageright_css__WEBPACK_IMPORTED_MODULE_9__ = __webpack_require__(/*! ../components/paragraphimageright.css */ "./components/paragraphimageright.css");
+/* harmony import */ var _components_paragraphimageright_css__WEBPACK_IMPORTED_MODULE_9___default = /*#__PURE__*/__webpack_require__.n(_components_paragraphimageright_css__WEBPACK_IMPORTED_MODULE_9__);
 var _jsxFileName = "C:\\Users\\capen\\Desktop\\WorkProjects\\next-js-starter\\pages\\about.js";
+
 
 
 
@@ -2209,21 +2254,26 @@ var _jsxFileName = "C:\\Users\\capen\\Desktop\\WorkProjects\\next-js-starter\\pa
 
 var About = function About() {
   return react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 12
+    style: {
+      display: 'flex',
+      alignItems: 'center',
+      flexDirection: 'column'
     },
-    __self: this
-  }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(next_server_head__WEBPACK_IMPORTED_MODULE_3___default.a, {
     __source: {
       fileName: _jsxFileName,
       lineNumber: 13
     },
     __self: this
-  }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("style", {
+  }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(next_server_head__WEBPACK_IMPORTED_MODULE_3___default.a, {
     __source: {
       fileName: _jsxFileName,
       lineNumber: 14
+    },
+    __self: this
+  }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("style", {
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 15
     },
     __self: this
   }, "\n                body {\n                margin: 0;\n                }"), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("meta", {
@@ -2231,24 +2281,17 @@ var About = function About() {
     content: "width=device-width, initial-scale=1",
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 20
+      lineNumber: 21
     },
     __self: this
   })), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_components_Header__WEBPACK_IMPORTED_MODULE_1__["default"], {
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 22
-    },
-    __self: this
-  }), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_components_Banner__WEBPACK_IMPORTED_MODULE_4__["default"], {
-    __source: {
-      fileName: _jsxFileName,
       lineNumber: 23
     },
     __self: this
-  }), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_components_ParagraphImageRight__WEBPACK_IMPORTED_MODULE_5__["default"], {
-    data: _data_paragraphimageright_json__WEBPACK_IMPORTED_MODULE_7__,
-    id: 0,
+  }), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_components_Banner__WEBPACK_IMPORTED_MODULE_4__["default"], {
+    text: "About Us",
     __source: {
       fileName: _jsxFileName,
       lineNumber: 24
@@ -2256,23 +2299,33 @@ var About = function About() {
     __self: this
   }), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_components_ParagraphImageRight__WEBPACK_IMPORTED_MODULE_5__["default"], {
     data: _data_paragraphimageright_json__WEBPACK_IMPORTED_MODULE_7__,
-    id: 1,
+    id: 0,
+    className: _components_paragraphimageright_css__WEBPACK_IMPORTED_MODULE_9___default.a.firstParagraph,
     __source: {
       fileName: _jsxFileName,
       lineNumber: 25
+    },
+    __self: this
+  }), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_components_ParagraphImageRight__WEBPACK_IMPORTED_MODULE_5__["default"], {
+    data: _data_paragraphimageright_json__WEBPACK_IMPORTED_MODULE_7__,
+    id: 1,
+    className: _components_paragraphimageright_css__WEBPACK_IMPORTED_MODULE_9___default.a.secondParagraph,
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 26
     },
     __self: this
   }), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_components_Accordian__WEBPACK_IMPORTED_MODULE_6__["default"], {
     data: _data_accordian_json__WEBPACK_IMPORTED_MODULE_8__,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 26
+      lineNumber: 27
     },
     __self: this
   }), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_components_Footer__WEBPACK_IMPORTED_MODULE_2__["default"], {
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 27
+      lineNumber: 28
     },
     __self: this
   }));
@@ -2282,7 +2335,7 @@ var About = function About() {
 
 /***/ }),
 
-/***/ 6:
+/***/ 4:
 /*!******************************!*\
   !*** multi ./pages/about.js ***!
   \******************************/

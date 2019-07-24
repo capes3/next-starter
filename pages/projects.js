@@ -4,7 +4,8 @@ import Head from 'next/head'
 import Banner from '../components/Banner'
 import ParagraphImageRight from '../components/ParagraphImageRight'
 import HorizontalTab from '../components/HorizontalTab'
-import data from '../data/paragraphimageright.json'
+import AlternatingImg from '../components/AlternatingImg'
+import data from '../data/alternating.json'
 import tabData from '../data/horizontaltab.json'
 import ContactForm from '../components/ContactFormMap'
 
@@ -22,8 +23,7 @@ const Projects = () => (
         </Head>
         <Header/>
         <Banner/>
-        <HorizontalTab data={tabData}/>
-        <ContactForm/>
+        <AlternatingImg data={data}/>
         <Footer/>
     </div>
 )

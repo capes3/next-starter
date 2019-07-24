@@ -88,7 +88,7 @@ module.exports =
 /******/
 /******/
 /******/ 	// Load entry module and return exports
-/******/ 	return __webpack_require__(__webpack_require__.s = 5);
+/******/ 	return __webpack_require__(__webpack_require__.s = 3);
 /******/ })
 /************************************************************************/
 /******/ ({
@@ -135,9 +135,10 @@ function (_React$Component) {
     key: "render",
     value: function render() {
       return react__WEBPACK_IMPORTED_MODULE_5___default.a.createElement("div", {
+        className: _components_banner_css__WEBPACK_IMPORTED_MODULE_6___default.a.bannerWrapper,
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 8
+          lineNumber: 7
         },
         __self: this
       }, react__WEBPACK_IMPORTED_MODULE_5___default.a.createElement("img", {
@@ -145,10 +146,17 @@ function (_React$Component) {
         src: '../static/image-one.jpg',
         __source: {
           fileName: _jsxFileName,
+          lineNumber: 8
+        },
+        __self: this
+      }), react__WEBPACK_IMPORTED_MODULE_5___default.a.createElement("div", {
+        className: _components_banner_css__WEBPACK_IMPORTED_MODULE_6___default.a.title,
+        __source: {
+          fileName: _jsxFileName,
           lineNumber: 9
         },
         __self: this
-      }));
+      }, this.props.text));
     }
   }]);
 
@@ -981,7 +989,7 @@ function (_React$Component) {
     value: function render(props) {
       var index = this.props;
       return react__WEBPACK_IMPORTED_MODULE_5___default.a.createElement("div", {
-        className: _components_paragraphimageright_css__WEBPACK_IMPORTED_MODULE_6___default.a.paragraphWrapper,
+        className: this.props.className,
         __source: {
           fileName: _jsxFileName,
           lineNumber: 16
@@ -1026,6 +1034,8 @@ function (_React$Component) {
 /***/ (function(module, exports) {
 
 module.exports = {
+	"bannerWrapper": "bannerWrapper___1QVkh",
+	"title": "title___lHFqs",
 	"image": "image___ohk0X"
 };
 
@@ -1067,9 +1077,7 @@ module.exports = {
 	"menuIcon": "menuIcon___CXDdv",
 	"logo": "logo___2qumV",
 	"headerWrapper": "headerWrapper___snjFD",
-	"linkWrapper": "linkWrapper___3hNju",
-	"menuList": "menuList___1s86S",
-	"open": "open___2CvLD"
+	"linkWrapper": "linkWrapper___3hNju"
 };
 
 /***/ }),
@@ -1095,8 +1103,11 @@ module.exports = {
 /***/ (function(module, exports) {
 
 module.exports = {
-	"paragraphWrapper": "paragraphWrapper___33gWU",
-	"image": "image___tZI0z"
+	"paragraphWrapper0": "paragraphWrapper0___3-2YW",
+	"image": "image___tZI0z",
+	"title0": "title0___WGDF2",
+	"firstParagraph": "firstParagraph___3xpkS",
+	"secondParagraph": "secondParagraph___1vHqp"
 };
 
 /***/ }),
@@ -1147,7 +1158,7 @@ module.exports = {"data":[{"id":1,"name":"Home","href":"/"},{"id":2,"name":"Abou
 /*! exports provided: data, default */
 /***/ (function(module) {
 
-module.exports = {"data":[{"id":0,"title":"Title","content":"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.","image":"https://picsum.photos/id/785/1600/400?blur=2"},{"id":1,"title":"Title","content":"1Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.","image":"https://picsum.photos/id/785/1600/400?blur=2"}]};
+module.exports = {"data":[{"id":0,"title":"Title for the first","content":"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.","image":"https://picsum.photos/id/785/1600/400?blur=2"},{"id":1,"title":"Title for the second","content":"1Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.","image":"https://picsum.photos/id/785/1600/400?blur=2"}]};
 
 /***/ }),
 
@@ -2474,7 +2485,7 @@ var Index = function Index() {
 
 /***/ }),
 
-/***/ 5:
+/***/ 3:
 /*!******************************!*\
   !*** multi ./pages/index.js ***!
   \******************************/

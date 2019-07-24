@@ -1,4 +1,5 @@
 import React from 'react'
+import css from '../components/accordian.css'
 
 
 class Accordian extends React.Component {
@@ -8,9 +9,10 @@ class Accordian extends React.Component {
 
     render () {
         const titleArray = this.props.data.title
-      return <div className='message-box'>
+      return <div className={css.wrapper}>
+          <div className={css.title}>FAQ</div>
         {titleArray.map((object, i) => 
-        <div>
+        <div className={css.item}>
         <AccordianItem title={object} key={i}/>
         </div>
         )}
@@ -32,12 +34,12 @@ class AccordianItem extends React.Component {
 
     render () {
         if(this.state.isOpen === true){
-        return <div>
-            <div onClick={this.toggleContent}>{this.props.title.title}</div>
+        return <div className={css.itemWrapper}>
+            <div className={css.itemTitle}onClick={this.toggleContent}>{this.props.title.title}</div>
             <div>{this.props.title.content}</div>
         </div>
         }else{
-            return <div onClick={this.toggleContent}>{this.props.title.title}</div>
+            return <div className={css.itemTitle}onClick={this.toggleContent}>{this.props.title.title}</div>
         }
     }
 }

@@ -1,4 +1,4 @@
-.paragraphWrapper{
+.paragraphWrapper0{
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
@@ -9,14 +9,23 @@
     display:none;
 }
 
-h1 {
-    flex-basis:100%;
-}
 
 p {
     margin: 10 auto;
     max-width: 50em;
     align-self: center;
+}
+
+.title0 {
+    color:red;
+}
+
+.firstParagraph{
+    
+}
+
+.secondParagraph{
+    background-color: lightgray;
 }
 
 /* On bigger screens make sure to change the image display */

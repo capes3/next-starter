@@ -1,0 +1,25 @@
+.wrapper{
+    display:flex;
+    flex-direction: column;
+    align-items: flex-start;
+    width:80%;
+    margin-top:25px;
+    
+}
+
+.title{
+    align-self:center;
+}
+
+.item{
+    width:100%;
+}
+
+.itemWrapper{
+    width:100%;
+}
+
+.itemTitle{
+    border-style:solid;
+    width:100%;
+}

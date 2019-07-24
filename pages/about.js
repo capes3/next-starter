@@ -6,10 +6,11 @@ import ParagraphImageRight from '../components/ParagraphImageRight'
 import Accordian from '../components/Accordian'
 import data from '../data/paragraphimageright.json'
 import accordianData from '../data/accordian.json'
+import css from '../components/paragraphimageright.css'
 
 
 const About = () => (
-    <div>
+    <div style={{display:'flex',alignItems:'center',flexDirection:'column'}}>
         <Head>
             <style>{`
                 body {
@@ -20,9 +21,9 @@ const About = () => (
             <meta name="viewport" content="width=device-width, initial-scale=1"></meta>
         </Head>
         <Header/>
-        <Banner/>
-        <ParagraphImageRight data={data} id={0}/>
-        <ParagraphImageRight data={data} id={1}/>
+        <Banner text={"About Us"}/>
+        <ParagraphImageRight data={data} id={0} className={css.firstParagraph}/>
+        <ParagraphImageRight data={data} id={1} className={css.secondParagraph}/>
         <Accordian data={accordianData}/>
         <Footer/>
     </div>

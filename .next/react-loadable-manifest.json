@@ -7,17 +7,15 @@
       "publicPath": "static/chunks/0.js"
     }
   ],
-  "../components/header.css": [
-    {
-      "id": "./components/header.css",
-      "name": "./components/header.css",
-      "file": "static/chunks/styles.js",
-      "publicPath": "static/chunks/styles.js"
-    }
-  ],
   "undefined": [
     {
-      "id": 2,
+      "id": 4,
+      "name": null,
+      "file": "static/chunks/styles.js",
+      "publicPath": "static/chunks/styles.js"
+    },
+    {
+      "id": 7,
       "name": null,
       "file": "static/chunks/styles.js",
       "publicPath": "static/chunks/styles.js"
@@ -29,7 +27,13 @@
       "publicPath": "static/chunks/styles.js"
     },
     {
-      "id": 4,
+      "id": 2,
+      "name": null,
+      "file": "static/chunks/styles.js",
+      "publicPath": "static/chunks/styles.js"
+    },
+    {
+      "id": 1,
       "name": null,
       "file": "static/chunks/styles.js",
       "publicPath": "static/chunks/styles.js"
@@ -45,10 +49,12 @@
       "name": null,
       "file": "static/chunks/styles.js",
       "publicPath": "static/chunks/styles.js"
-    },
+    }
+  ],
+  "../components/accordian.css": [
     {
-      "id": 8,
-      "name": null,
+      "id": "./components/accordian.css",
+      "name": "./components/accordian.css",
       "file": "static/chunks/styles.js",
       "publicPath": "static/chunks/styles.js"
     }
@@ -69,18 +75,26 @@
       "publicPath": "static/chunks/styles.js"
     }
   ],
-  "../components/menu.css": [
-    {
-      "id": "./components/menu.css",
-      "name": "./components/menu.css",
-      "file": "static/chunks/styles.js",
-      "publicPath": "static/chunks/styles.js"
-    }
-  ],
   "./footer.css": [
     {
       "id": "./components/footer.css",
       "name": "./components/footer.css",
+      "file": "static/chunks/styles.js",
+      "publicPath": "static/chunks/styles.js"
+    }
+  ],
+  "../components/header.css": [
+    {
+      "id": "./components/header.css",
+      "name": "./components/header.css",
+      "file": "static/chunks/styles.js",
+      "publicPath": "static/chunks/styles.js"
+    }
+  ],
+  "../components/menu.css": [
+    {
+      "id": "./components/menu.css",
+      "name": "./components/menu.css",
       "file": "static/chunks/styles.js",
       "publicPath": "static/chunks/styles.js"
     }
