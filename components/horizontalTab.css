@@ -1,0 +1,20 @@
+.wrapper{
+    display:flex;
+    flex-direction: column;
+    padding:25px 0 0;
+}
+
+.tabWrapper{
+    display:flex;
+    align-self:center;    
+}
+
+.tabContent{
+    align-self:center;
+}
+
+.tab{
+    border:1px solid;
+    padding: 0 5px;
+    border-top: none;
+}

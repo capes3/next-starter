@@ -30,14 +30,19 @@ class Carousel extends React.Component {
 
   render () {
     return( 
-      <div className='message-box'>
-        <button onClick={this.prevCard} disabled={this.state.active.index === 0}>
-          Previous
-        </button>
-          <Card data={this.state.active}/>
-        <button onClick={this.nextCard} disabled={this.state.active.index === data.cards.length-1}>
-          Next
-        </button>
+      <div className={css.carouselWrapper}>
+        <div className={css.carouselTitle}>Our Services</div>
+          <div className={css.carousel}>
+            <button onClick={this.prevCard} disabled={this.state.active.index === 0}>
+              X
+            </button>
+              <div className={css.imageWrapper}>
+                <Card data={this.state.active}/>
+              </div>
+            <button onClick={this.nextCard} disabled={this.state.active.index === data.cards.length-1}>
+              X
+            </button>
+          </div>
       </div>
     )}
 }

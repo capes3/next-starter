@@ -1,0 +1,27 @@
+.carouselWrapper{
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+    background-color: gainsboro;
+}
+
+.carousel{
+    display:flex;
+    flex-direction:row;
+    justify-content:center;
+    margin: 10px 0px;
+}
+
+.carouselTitle{
+    align-self: center;
+    color:darkcyan;
+}
+
+.carousel button {
+    align-self:center;
+    width:25px;
+}
+
+.imageWrapper{
+    align-self:center;
+}

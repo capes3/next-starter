@@ -288,10 +288,24 @@ function (_React$Component) {
     key: "render",
     value: function render() {
       return react__WEBPACK_IMPORTED_MODULE_7___default.a.createElement("div", {
-        className: "message-box",
+        className: _components_carousel_css__WEBPACK_IMPORTED_MODULE_8___default.a.carouselWrapper,
         __source: {
           fileName: _jsxFileName,
           lineNumber: 33
+        },
+        __self: this
+      }, react__WEBPACK_IMPORTED_MODULE_7___default.a.createElement("div", {
+        className: _components_carousel_css__WEBPACK_IMPORTED_MODULE_8___default.a.carouselTitle,
+        __source: {
+          fileName: _jsxFileName,
+          lineNumber: 34
+        },
+        __self: this
+      }, "Our Services"), react__WEBPACK_IMPORTED_MODULE_7___default.a.createElement("div", {
+        className: _components_carousel_css__WEBPACK_IMPORTED_MODULE_8___default.a.carousel,
+        __source: {
+          fileName: _jsxFileName,
+          lineNumber: 35
         },
         __self: this
       }, react__WEBPACK_IMPORTED_MODULE_7___default.a.createElement("button", {
@@ -299,25 +313,32 @@ function (_React$Component) {
         disabled: this.state.active.index === 0,
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 34
+          lineNumber: 36
         },
         __self: this
-      }, "Previous"), react__WEBPACK_IMPORTED_MODULE_7___default.a.createElement(_components_Card__WEBPACK_IMPORTED_MODULE_12__["default"], {
+      }, "X"), react__WEBPACK_IMPORTED_MODULE_7___default.a.createElement("div", {
+        className: _components_carousel_css__WEBPACK_IMPORTED_MODULE_8___default.a.imageWrapper,
+        __source: {
+          fileName: _jsxFileName,
+          lineNumber: 39
+        },
+        __self: this
+      }, react__WEBPACK_IMPORTED_MODULE_7___default.a.createElement(_components_Card__WEBPACK_IMPORTED_MODULE_12__["default"], {
         data: this.state.active,
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 37
+          lineNumber: 40
         },
         __self: this
-      }), react__WEBPACK_IMPORTED_MODULE_7___default.a.createElement("button", {
+      })), react__WEBPACK_IMPORTED_MODULE_7___default.a.createElement("button", {
         onClick: this.nextCard,
         disabled: this.state.active.index === _data_cards__WEBPACK_IMPORTED_MODULE_11__["default"].cards.length - 1,
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 38
+          lineNumber: 42
         },
         __self: this
-      }, "Next"));
+      }, "X")));
     }
   }]);
 
@@ -348,6 +369,8 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_7___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_7__);
 /* harmony import */ var react_dom__WEBPACK_IMPORTED_MODULE_8__ = __webpack_require__(/*! react-dom */ "react-dom");
 /* harmony import */ var react_dom__WEBPACK_IMPORTED_MODULE_8___default = /*#__PURE__*/__webpack_require__.n(react_dom__WEBPACK_IMPORTED_MODULE_8__);
+/* harmony import */ var _contactFormMap_css__WEBPACK_IMPORTED_MODULE_9__ = __webpack_require__(/*! ./contactFormMap.css */ "./components/contactFormMap.css");
+/* harmony import */ var _contactFormMap_css__WEBPACK_IMPORTED_MODULE_9___default = /*#__PURE__*/__webpack_require__.n(_contactFormMap_css__WEBPACK_IMPORTED_MODULE_9__);
 
 
 
@@ -356,6 +379,7 @@ __webpack_require__.r(__webpack_exports__);
 
 
 var _jsxFileName = "C:\\Users\\capen\\Desktop\\WorkProjects\\next-js-starter\\components\\ContactFormMap.js";
+
 
 
 
@@ -412,16 +436,23 @@ function (_React$Component) {
     key: "render",
     value: function render() {
       return react__WEBPACK_IMPORTED_MODULE_7___default.a.createElement("div", {
-        className: "message-box",
-        __source: {
-          fileName: _jsxFileName,
-          lineNumber: 37
-        },
-        __self: this
-      }, react__WEBPACK_IMPORTED_MODULE_7___default.a.createElement("form", {
+        className: _contactFormMap_css__WEBPACK_IMPORTED_MODULE_9___default.a.contactForm,
         __source: {
           fileName: _jsxFileName,
           lineNumber: 38
+        },
+        __self: this
+      }, react__WEBPACK_IMPORTED_MODULE_7___default.a.createElement("div", {
+        className: _contactFormMap_css__WEBPACK_IMPORTED_MODULE_9___default.a.title,
+        __source: {
+          fileName: _jsxFileName,
+          lineNumber: 39
+        },
+        __self: this
+      }, "Contact Us"), react__WEBPACK_IMPORTED_MODULE_7___default.a.createElement("form", {
+        __source: {
+          fileName: _jsxFileName,
+          lineNumber: 40
         },
         __self: this
       }, react__WEBPACK_IMPORTED_MODULE_7___default.a.createElement("input", {
@@ -430,7 +461,7 @@ function (_React$Component) {
         onChange: this.nameChange,
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 39
+          lineNumber: 41
         },
         __self: this
       }), react__WEBPACK_IMPORTED_MODULE_7___default.a.createElement("input", {
@@ -439,7 +470,7 @@ function (_React$Component) {
         onChange: this.emailChange,
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 40
+          lineNumber: 42
         },
         __self: this
       }), react__WEBPACK_IMPORTED_MODULE_7___default.a.createElement("input", {
@@ -448,7 +479,7 @@ function (_React$Component) {
         onChange: this.phoneChange,
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 41
+          lineNumber: 43
         },
         __self: this
       }), react__WEBPACK_IMPORTED_MODULE_7___default.a.createElement("input", {
@@ -457,14 +488,14 @@ function (_React$Component) {
         onChange: this.messageChange,
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 42
+          lineNumber: 44
         },
         __self: this
       }), react__WEBPACK_IMPORTED_MODULE_7___default.a.createElement("button", {
         onClick: this.submit,
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 44
+          lineNumber: 46
         },
         __self: this
       }, "Submit")));
@@ -626,92 +657,127 @@ var _jsxFileName = "C:\\Users\\capen\\Desktop\\WorkProjects\\next-js-starter\\co
 
 var Header = function Header() {
   return react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
-    className: _components_header_css__WEBPACK_IMPORTED_MODULE_4___default.a.headerWrapper,
     __source: {
       fileName: _jsxFileName,
       lineNumber: 13
     },
     __self: this
   }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
-    className: _components_header_css__WEBPACK_IMPORTED_MODULE_4___default.a.logo,
+    className: _components_header_css__WEBPACK_IMPORTED_MODULE_4___default.a.contactBar,
     __source: {
       fileName: _jsxFileName,
       lineNumber: 14
     },
     __self: this
-  }, "Logo"), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
-    className: _components_header_css__WEBPACK_IMPORTED_MODULE_4___default.a.linkWrapper,
+  }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+    className: _components_header_css__WEBPACK_IMPORTED_MODULE_4___default.a.phone,
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 15
+    },
+    __self: this
+  }, "(435)257-7333"), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+    className: _components_header_css__WEBPACK_IMPORTED_MODULE_4___default.a.social,
     __source: {
       fileName: _jsxFileName,
       lineNumber: 18
     },
     __self: this
-  }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(next_link__WEBPACK_IMPORTED_MODULE_1___default.a, {
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 19
-    },
-    __self: this
-  }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("a", {
-    href: "/",
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 20
-    },
-    __self: this
-  }, "Home")), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(next_link__WEBPACK_IMPORTED_MODULE_1___default.a, {
+  }, "follow us on:")), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+    className: _components_header_css__WEBPACK_IMPORTED_MODULE_4___default.a.headerWrapper,
     __source: {
       fileName: _jsxFileName,
       lineNumber: 22
     },
     __self: this
-  }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("a", {
-    href: "/about",
+  }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+    className: _components_header_css__WEBPACK_IMPORTED_MODULE_4___default.a.logoWrapper,
     __source: {
       fileName: _jsxFileName,
       lineNumber: 23
     },
     __self: this
-  }, "About")), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(next_link__WEBPACK_IMPORTED_MODULE_1___default.a, {
+  }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("img", {
+    className: _components_header_css__WEBPACK_IMPORTED_MODULE_4___default.a.logo,
+    src: "../static/RuppsLogo-WhiteBorder.png",
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 25
+      lineNumber: 24
     },
     __self: this
-  }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("a", {
-    href: "/contact",
+  })), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+    className: _components_header_css__WEBPACK_IMPORTED_MODULE_4___default.a.linkWrapper,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 26
+      lineNumber: 27
     },
     __self: this
-  }, "Contact")), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(next_link__WEBPACK_IMPORTED_MODULE_1___default.a, {
+  }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(next_link__WEBPACK_IMPORTED_MODULE_1___default.a, {
     __source: {
       fileName: _jsxFileName,
       lineNumber: 28
     },
     __self: this
   }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("a", {
-    href: "/services",
+    href: "/",
     __source: {
       fileName: _jsxFileName,
       lineNumber: 29
+    },
+    __self: this
+  }, "Home")), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(next_link__WEBPACK_IMPORTED_MODULE_1___default.a, {
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 31
+    },
+    __self: this
+  }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("a", {
+    href: "/about",
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 32
+    },
+    __self: this
+  }, "About")), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(next_link__WEBPACK_IMPORTED_MODULE_1___default.a, {
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 34
+    },
+    __self: this
+  }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("a", {
+    href: "/contact",
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 35
+    },
+    __self: this
+  }, "Contact")), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(next_link__WEBPACK_IMPORTED_MODULE_1___default.a, {
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 37
+    },
+    __self: this
+  }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("a", {
+    href: "/services",
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 38
     },
     __self: this
   }, "Services"))), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
     className: _components_header_css__WEBPACK_IMPORTED_MODULE_4___default.a.hamburgerContainer,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 32
+      lineNumber: 41
     },
     __self: this
   }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_components_MenuIcon__WEBPACK_IMPORTED_MODULE_5__["default"], {
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 33
+      lineNumber: 42
     },
     __self: this
-  })));
+  }))));
 };
 
 /* harmony default export */ __webpack_exports__["default"] = (Header);
@@ -918,7 +984,15 @@ function (_React$Component) {
             lineNumber: 17
           },
           __self: this
-        }, "Open", react__WEBPACK_IMPORTED_MODULE_7___default.a.createElement(_components_Menu__WEBPACK_IMPORTED_MODULE_8__["default"], {
+        }, react__WEBPACK_IMPORTED_MODULE_7___default.a.createElement("img", {
+          className: _components_header_css__WEBPACK_IMPORTED_MODULE_10___default.a.menuIcon,
+          src: "../static/bx-x.svg",
+          __source: {
+            fileName: _jsxFileName,
+            lineNumber: 18
+          },
+          __self: this
+        }), react__WEBPACK_IMPORTED_MODULE_7___default.a.createElement(_components_Menu__WEBPACK_IMPORTED_MODULE_8__["default"], {
           data: _data_menuItems_json__WEBPACK_IMPORTED_MODULE_9__.data,
           __source: {
             fileName: _jsxFileName,
@@ -934,7 +1008,15 @@ function (_React$Component) {
             lineNumber: 24
           },
           __self: this
-        }, "Closed");
+        }, react__WEBPACK_IMPORTED_MODULE_7___default.a.createElement("img", {
+          className: _components_header_css__WEBPACK_IMPORTED_MODULE_10___default.a.menuIcon,
+          src: "../static/bx-menu.svg",
+          __source: {
+            fileName: _jsxFileName,
+            lineNumber: 25
+          },
+          __self: this
+        }));
       }
     }
   }]);
@@ -1048,7 +1130,26 @@ module.exports = {
 /*! no static exports found */
 /***/ (function(module, exports) {
 
+module.exports = {
+	"carouselWrapper": "carouselWrapper___qz1ci",
+	"carousel": "carousel___2vM-W",
+	"carouselTitle": "carouselTitle___2qt1Y",
+	"imageWrapper": "imageWrapper___25qmt"
+};
 
+/***/ }),
+
+/***/ "./components/contactFormMap.css":
+/*!***************************************!*\
+  !*** ./components/contactFormMap.css ***!
+  \***************************************/
+/*! no static exports found */
+/***/ (function(module, exports) {
+
+module.exports = {
+	"contactForm": "contactForm___1dxJs",
+	"title": "title___Vgl0q"
+};
 
 /***/ }),
 
@@ -1077,7 +1178,8 @@ module.exports = {
 	"menuIcon": "menuIcon___CXDdv",
 	"logo": "logo___2qumV",
 	"headerWrapper": "headerWrapper___snjFD",
-	"linkWrapper": "linkWrapper___3hNju"
+	"linkWrapper": "linkWrapper___3hNju",
+	"contactBar": "contactBar___3m9ZO"
 };
 
 /***/ }),

@@ -10,7 +10,7 @@ import css from '../components/paragraphimageright.css'
 
 
 const About = () => (
-    <div style={{display:'flex',alignItems:'center',flexDirection:'column'}}>
+    <div style={{display:'flex',flexDirection:'column'}}>
         <Head>
             <style>{`
                 body {

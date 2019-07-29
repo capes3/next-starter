@@ -1,4 +1,5 @@
 import React from 'react'
+import css from './horizontalTab.css'
 
 
 class HorizontalTab extends React.Component {
@@ -9,16 +10,20 @@ class HorizontalTab extends React.Component {
 
     render () {
         const titleArray = this.props.data.title
-      return <div className='message-box'>
+      return <div className={css.wrapper}>
+        <div className={css.tabWrapper}>
         {titleArray.map((object, i) => 
-        <div onClick={()=>{this.setState({selected:i})}}>
+        <div className={css.tab} onClick={()=>{this.setState({selected:i})}}>
         {object.title}
         </div>
         )}
+        </div>
+        <div className={css.tabContent}>
+        <img src={titleArray[this.state.selected].image}/>
         <div>
             {titleArray[this.state.selected].content}
         </div>
-        <img src={titleArray[this.state.selected].image}/>
+        </div>
       </div>
     }
   }

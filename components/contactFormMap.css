@@ -1,0 +1,28 @@
+.contactForm{
+    display:flex;
+    justify-content: center;
+    flex-direction: column;
+    margin-top: 5px;
+}
+
+.title{
+    align-self:center;
+    margin: 20px 0;
+}
+
+.contactForm form {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    width: 75%;
+    align-self: center;
+}
+
+.contactForm form input{
+    align-self: center;
+}
+
+.contactForm form button{
+    width:25%;
+    align-self:center;
+}

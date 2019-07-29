@@ -10,9 +10,18 @@ import MenuIcon from "../components/MenuIcon"
 //think through how an abstract nested menu needs to be built.  
 
 const Header = () => (
+    <div>
+    <div className={css.contactBar}>
+        <div className={css.phone}>
+            (435)257-7333
+        </div>
+        <div className={css.social}>
+            follow us on:
+        </div>
+    </div>
     <div className={css.headerWrapper}>
-        <div className={css.logo}>
-            Logo
+        <div className={css.logoWrapper}>
+            <img className={css.logo} src={"../static/RuppsLogo-WhiteBorder.png"}/>
         </div>
         {/* This div will be hidden on mobile */}
         <div className={css.linkWrapper}>
@@ -32,6 +41,7 @@ const Header = () => (
         <div className={css.hamburgerContainer}>
             <MenuIcon/>
         </div>
+    </div>
     </div>
 )
 

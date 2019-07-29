@@ -1,31 +1,51 @@
 .hamburgerContainer___xAdXq{
  padding-right:10px;
- color: white;
+ color: darkcyan;
 }
 
 .menuIcon___CXDdv{
- color: white;
+ color: darkcyan;
+ height:35px;
+ align-self:center;
 }
 
 .logo___2qumV{
-    padding-left:10px;
-    color: white;
+    height: 90px;
+    width: 130px;
+    top: 18px;
+    position: absolute;
+    z-index: 1;
 }
 
 .headerWrapper___snjFD{
     width: 100%;
     height: 50px;
-    background-color:black;
+    background-color:white;
     display:flex;
+    flex-wrap:wrap;
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
     box-shadow: 2.5px 2.5px 1.25px lightgrey;
+    padding-top:5%;
 }
 
 .linkWrapper___3hNju{
     display:none;
 }
+
+.contactBar___3m9ZO{
+    background-color:black;
+    height:3%;
+    position: absolute;
+    width:100%;
+    flex-basis:100%;
+    color:white;
+    display:flex;
+    flex-direction:row;
+    justify-content: space-between;
+}
+
 
 
 
@@ -77,6 +97,7 @@ p {
     margin: 10 auto;
     max-width: 50em;
     align-self: center;
+    padding: 0 15px;
 }
 
 .title0___WGDF2 {
@@ -92,7 +113,33 @@ p {
 }
 
 /* On bigger screens make sure to change the image display */
+.carouselWrapper___qz1ci{
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+    background-color: gainsboro;
+}
 
+.carousel___2vM-W{
+    display:flex;
+    flex-direction:row;
+    justify-content:center;
+    margin: 10px 0px;
+}
+
+.carouselTitle___2qt1Y{
+    align-self: center;
+    color:darkcyan;
+}
+
+.carousel___2vM-W button {
+    align-self:center;
+    width:25px;
+}
+
+.imageWrapper___25qmt{
+    align-self:center;
+}
 .wrapper___3kmjn {
     height:50px;
     width: 100%;
@@ -100,31 +147,53 @@ p {
     background-color:black;
     margin-top:20px;
 }
-.wrapper___3yMX7{
+.wrapper___2DRkw{
     display:flex;
     flex-direction: column;
-    align-items: flex-start;
-    width:80%;
-    margin-top:25px;
-    
+    padding:25px 0 0;
 }
 
-.title___1nf0U{
+.tabWrapper___3TpVS{
+    display:flex;
+    align-self:center;    
+}
+
+.tabContent___1dqzA{
     align-self:center;
 }
 
-.item___3byWd{
-    width:100%;
+.tab___UJjjn{
+    border:1px solid;
+    padding: 0 5px;
+    border-top: none;
+}
+.contactForm___1dxJs{
+    display:flex;
+    justify-content: center;
+    flex-direction: column;
+    margin-top: 5px;
 }
 
-.itemWrapper___1iU0Q{
-    width:100%;
+.title___Vgl0q{
+    align-self:center;
+    margin: 20px 0;
 }
 
-.itemTitle___olevx{
-    border-style:solid;
-    width:100%;
+.contactForm___1dxJs form {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    width: 75%;
+    align-self: center;
 }
 
+.contactForm___1dxJs form input{
+    align-self: center;
+}
+
+.contactForm___1dxJs form button{
+    width:25%;
+    align-self:center;
+}
 
 /*# sourceMappingURL=styles.chunk.css.map*/

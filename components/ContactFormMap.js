@@ -1,5 +1,6 @@
 import React from 'react'
 import ReactDOM from 'react-dom'
+import css from './contactFormMap.css'
 
 
 class ContactForm extends React.Component {
@@ -34,7 +35,8 @@ class ContactForm extends React.Component {
     }
 
   render () {
-    return <div className='message-box'>
+    return <div className={css.contactForm}>
+        <div className={css.title}>Contact Us</div>
         <form>
       <input type="text" value={this.state.value} onChange={this.nameChange}/>
       <input type="text" value={this.state.value} onChange={this.emailChange}/>

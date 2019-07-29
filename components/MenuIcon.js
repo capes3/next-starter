@@ -15,14 +15,14 @@ class MenuIcon extends React.Component{
         if(this.state.isOpen === true){
         return( 
             <div onClick={this.handleClick} className={css.open}>
-                Open
+                <img className={css.menuIcon}src={"../static/bx-x.svg"}/>
                 <Menu data={data.data}/>
             </div>
         )
     }else{
         return(
             <div onClick={this.handleClick}>
-                Closed
+                 <img className={css.menuIcon}src={"../static/bx-menu.svg"}/>
             </div>
         )
     }
