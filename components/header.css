@@ -46,5 +46,19 @@
     justify-content: space-between;
 }
 
+@media screen and (min-width: 600px) {
+   
+  }
 
+  @media screen and (min-width: 900px) {
+   
+}
+
+@media screen and (min-width: 1200px) {
+   
+}
+
+@media screen and (min-width: 1800px) {
+   
+}
 
