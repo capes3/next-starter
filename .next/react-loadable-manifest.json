@@ -59,16 +59,8 @@
       "publicPath": "static/chunks/styles.js"
     },
     {
-      "id": 10,
+      "id": 12,
       "name": null,
-      "file": "static/chunks/styles.js",
-      "publicPath": "static/chunks/styles.js"
-    }
-  ],
-  "../components/carousel.css": [
-    {
-      "id": "./components/carousel.css",
-      "name": "./components/carousel.css",
       "file": "static/chunks/styles.js",
       "publicPath": "static/chunks/styles.js"
     }
@@ -97,10 +89,10 @@
       "publicPath": "static/chunks/styles.js"
     }
   ],
-  "./horizontalTab.css": [
+  "../components/accordian.css": [
     {
-      "id": "./components/horizontalTab.css",
-      "name": "./components/horizontalTab.css",
+      "id": "./components/accordian.css",
+      "name": "./components/accordian.css",
       "file": "static/chunks/styles.js",
       "publicPath": "static/chunks/styles.js"
     }
@@ -109,6 +101,14 @@
     {
       "id": "./components/contactFormMap.css",
       "name": "./components/contactFormMap.css",
+      "file": "static/chunks/styles.js",
+      "publicPath": "static/chunks/styles.js"
+    }
+  ],
+  "../components/carousel.css": [
+    {
+      "id": "./components/carousel.css",
+      "name": "./components/carousel.css",
       "file": "static/chunks/styles.js",
       "publicPath": "static/chunks/styles.js"
     }

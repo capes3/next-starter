@@ -11,7 +11,6 @@
 
 .logo{
     height: 90px;
-    width: 130px;
     top: 18px;
     position: absolute;
     z-index: 1;
@@ -47,15 +46,57 @@
 }
 
 @media screen and (min-width: 600px) {
-   
+   .headerWrapper{
+       height: 80px;
+   }
+
+   .logo{
+       height:120px;
+   }
+
+   .hamburgerContainer{
+       padding-right:20px;
+   }
   }
 
   @media screen and (min-width: 900px) {
-   
+   .linkWrapper{
+       display:block;
+       padding-right: 10px;
+   }
+
+   .linkWrapper a{
+       padding:0 10px;
+       text-decoration: none;
+       color:black;
+       cursor:pointer;
+   }
+
+   .hamburgerContainer{
+       display: none;
+   }
+
+   .linkWrapper .contactButton{
+       background-color:darkcyan;
+       border-radius: 8px;
+       color:white;
+       padding: 8px 8px;
+       cursor: pointer;
+   }
 }
 
 @media screen and (min-width: 1200px) {
-   
+   .headerWrapper{
+       height:100px;
+   }
+
+   .logo{
+       height:150px;
+   }
+
+   .linkWrapper{
+       font-size: 130%;
+   }
 }
 
 @media screen and (min-width: 1800px) {

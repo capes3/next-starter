@@ -32,10 +32,13 @@ const Header = () => (
                 <a href="/about">About</a>
             </Link>
             <Link>
-                <a href="/contact">Contact</a>
+                <a href="/services">Services</a>
             </Link>
             <Link>
-                <a href="/services">Services</a>
+                <a href="/projects">Projects</a>
+            </Link>
+            <Link>
+                <a className={css.contactButton}href="/contact">Contact</a>
             </Link>
         </div>
         <div className={css.hamburgerContainer}>
