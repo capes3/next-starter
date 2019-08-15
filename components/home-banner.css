@@ -1,0 +1,24 @@
+.textWrapper{
+    position: absolute;
+    top: 45%;
+    left: 10%;
+    color:white;
+    font-size:1.5em;
+    z-index: 2;
+}
+
+.bannerWrapper h3{
+    font-size:.75em;
+    font-weight: normal;
+}
+
+.bannerWrapper button{
+    background-color:darkcyan;
+    color:white;
+    border-radius: 8px;
+    padding: 8px 8px;
+    cursor: pointer;
+    border:none;
+}
+
+button:focus {outline:0;}

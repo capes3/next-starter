@@ -1,7 +1,11 @@
-function Card ({ data }) {
+import css from "../components/carousel.css"
+
+
+function Card ({ img,key,link }) {
+
     return (
-        <div className='message-box'>
-            <img src={data.img}/>
+        <div className={css.image}>
+            <img src={ img }/>
         </div>
     )
   }

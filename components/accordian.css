@@ -10,6 +10,8 @@
 .title{
     align-self:center;
     padding: 10px 0px 10px;
+    color:darkcyan;
+    font-size: 2em;
 }
 
 .item{
@@ -21,8 +23,10 @@
 }
 
 .itemTitle{
-    border-style:solid;
+    background-color:lightgray;
     width:100%;
+    font-size:1.15em;
+    padding: 5px 0px 5px 10px;
 }
 
 

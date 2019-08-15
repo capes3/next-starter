@@ -109,14 +109,17 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _babel_runtime_corejs2_helpers_esm_inherits__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! @babel/runtime-corejs2/helpers/esm/inherits */ "./node_modules/@babel/runtime-corejs2/helpers/esm/inherits.js");
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! react */ "react");
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_5___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_5__);
-/* harmony import */ var _components_banner_css__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! ../components/banner.css */ "./components/banner.css");
-/* harmony import */ var _components_banner_css__WEBPACK_IMPORTED_MODULE_6___default = /*#__PURE__*/__webpack_require__.n(_components_banner_css__WEBPACK_IMPORTED_MODULE_6__);
+/* harmony import */ var _components_home_banner_css__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! ../components/home-banner.css */ "./components/home-banner.css");
+/* harmony import */ var _components_home_banner_css__WEBPACK_IMPORTED_MODULE_6___default = /*#__PURE__*/__webpack_require__.n(_components_home_banner_css__WEBPACK_IMPORTED_MODULE_6__);
+/* harmony import */ var _components_banner_css__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(/*! ../components/banner.css */ "./components/banner.css");
+/* harmony import */ var _components_banner_css__WEBPACK_IMPORTED_MODULE_7___default = /*#__PURE__*/__webpack_require__.n(_components_banner_css__WEBPACK_IMPORTED_MODULE_7__);
 
 
 
 
 
 var _jsxFileName = "C:\\Users\\capen\\Desktop\\WorkProjects\\next-js-starter\\components\\Banner.js";
+
 
 
 
@@ -133,30 +136,75 @@ function (_React$Component) {
 
   Object(_babel_runtime_corejs2_helpers_esm_createClass__WEBPACK_IMPORTED_MODULE_1__["default"])(Banner, [{
     key: "render",
-    value: function render() {
-      return react__WEBPACK_IMPORTED_MODULE_5___default.a.createElement("div", {
-        className: _components_banner_css__WEBPACK_IMPORTED_MODULE_6___default.a.bannerWrapper,
-        __source: {
-          fileName: _jsxFileName,
-          lineNumber: 7
-        },
-        __self: this
-      }, react__WEBPACK_IMPORTED_MODULE_5___default.a.createElement("img", {
-        className: _components_banner_css__WEBPACK_IMPORTED_MODULE_6___default.a.image,
-        src: '../static/image-one.jpg',
-        __source: {
-          fileName: _jsxFileName,
-          lineNumber: 8
-        },
-        __self: this
-      }), react__WEBPACK_IMPORTED_MODULE_5___default.a.createElement("div", {
-        className: _components_banner_css__WEBPACK_IMPORTED_MODULE_6___default.a.title,
-        __source: {
-          fileName: _jsxFileName,
-          lineNumber: 9
-        },
-        __self: this
-      }, this.props.text));
+    value: function render(props) {
+      if (this.props.button) {
+        return react__WEBPACK_IMPORTED_MODULE_5___default.a.createElement("div", {
+          className: _components_home_banner_css__WEBPACK_IMPORTED_MODULE_6___default.a.bannerWrapper,
+          __source: {
+            fileName: _jsxFileName,
+            lineNumber: 8
+          },
+          __self: this
+        }, react__WEBPACK_IMPORTED_MODULE_5___default.a.createElement("img", {
+          className: _components_banner_css__WEBPACK_IMPORTED_MODULE_7___default.a.image,
+          src: '../static/image-one.jpg',
+          __source: {
+            fileName: _jsxFileName,
+            lineNumber: 9
+          },
+          __self: this
+        }), react__WEBPACK_IMPORTED_MODULE_5___default.a.createElement("div", {
+          className: _components_home_banner_css__WEBPACK_IMPORTED_MODULE_6___default.a.textWrapper,
+          __source: {
+            fileName: _jsxFileName,
+            lineNumber: 10
+          },
+          __self: this
+        }, react__WEBPACK_IMPORTED_MODULE_5___default.a.createElement("div", {
+          className: _components_home_banner_css__WEBPACK_IMPORTED_MODULE_6___default.a.title,
+          __source: {
+            fileName: _jsxFileName,
+            lineNumber: 11
+          },
+          __self: this
+        }, this.props.text), react__WEBPACK_IMPORTED_MODULE_5___default.a.createElement("h3", {
+          __source: {
+            fileName: _jsxFileName,
+            lineNumber: 12
+          },
+          __self: this
+        }, this.props.h2), react__WEBPACK_IMPORTED_MODULE_5___default.a.createElement("button", {
+          __source: {
+            fileName: _jsxFileName,
+            lineNumber: 13
+          },
+          __self: this
+        }, this.props.button)));
+      } else {
+        return react__WEBPACK_IMPORTED_MODULE_5___default.a.createElement("div", {
+          className: _components_banner_css__WEBPACK_IMPORTED_MODULE_7___default.a.bannerWrapper,
+          __source: {
+            fileName: _jsxFileName,
+            lineNumber: 18
+          },
+          __self: this
+        }, react__WEBPACK_IMPORTED_MODULE_5___default.a.createElement("img", {
+          className: _components_banner_css__WEBPACK_IMPORTED_MODULE_7___default.a.image,
+          src: '../static/image-one.jpg',
+          __source: {
+            fileName: _jsxFileName,
+            lineNumber: 19
+          },
+          __self: this
+        }), react__WEBPACK_IMPORTED_MODULE_5___default.a.createElement("div", {
+          className: _components_banner_css__WEBPACK_IMPORTED_MODULE_7___default.a.title,
+          __source: {
+            fileName: _jsxFileName,
+            lineNumber: 20
+          },
+          __self: this
+        }, this.props.text));
+      }
     }
   }]);
 
@@ -178,23 +226,28 @@ function (_React$Component) {
 __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ "react");
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);
+/* harmony import */ var _components_carousel_css__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ../components/carousel.css */ "./components/carousel.css");
+/* harmony import */ var _components_carousel_css__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(_components_carousel_css__WEBPACK_IMPORTED_MODULE_1__);
 var _jsxFileName = "C:\\Users\\capen\\Desktop\\WorkProjects\\next-js-starter\\components\\Card.js";
 
 
+
 function Card(_ref) {
-  var data = _ref.data;
+  var img = _ref.img,
+      key = _ref.key,
+      link = _ref.link;
   return react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
-    className: "message-box",
+    className: _components_carousel_css__WEBPACK_IMPORTED_MODULE_1___default.a.image,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 3
+      lineNumber: 7
     },
     __self: this
   }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("img", {
-    src: data.img,
+    src: img,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 4
+      lineNumber: 8
     },
     __self: this
   }));
@@ -251,36 +304,22 @@ function (_React$Component) {
   Object(_babel_runtime_corejs2_helpers_esm_inherits__WEBPACK_IMPORTED_MODULE_5__["default"])(Carousel, _React$Component);
 
   function Carousel() {
+    var _getPrototypeOf2;
+
     var _this;
 
     Object(_babel_runtime_corejs2_helpers_esm_classCallCheck__WEBPACK_IMPORTED_MODULE_0__["default"])(this, Carousel);
 
-    _this = Object(_babel_runtime_corejs2_helpers_esm_possibleConstructorReturn__WEBPACK_IMPORTED_MODULE_2__["default"])(this, Object(_babel_runtime_corejs2_helpers_esm_getPrototypeOf__WEBPACK_IMPORTED_MODULE_3__["default"])(Carousel).call(this));
+    for (var _len = arguments.length, args = new Array(_len), _key = 0; _key < _len; _key++) {
+      args[_key] = arguments[_key];
+    }
 
-    Object(_babel_runtime_corejs2_helpers_esm_defineProperty__WEBPACK_IMPORTED_MODULE_6__["default"])(Object(_babel_runtime_corejs2_helpers_esm_assertThisInitialized__WEBPACK_IMPORTED_MODULE_4__["default"])(_this), "nextCard", function () {
-      var newIndex = _this.state.active.index;
+    _this = Object(_babel_runtime_corejs2_helpers_esm_possibleConstructorReturn__WEBPACK_IMPORTED_MODULE_2__["default"])(this, (_getPrototypeOf2 = Object(_babel_runtime_corejs2_helpers_esm_getPrototypeOf__WEBPACK_IMPORTED_MODULE_3__["default"])(Carousel)).call.apply(_getPrototypeOf2, [this].concat(args)));
 
-      _this.setState({
-        active: _data_cards__WEBPACK_IMPORTED_MODULE_11__["default"].cards[newIndex + 1]
-      });
-    });
+    Object(_babel_runtime_corejs2_helpers_esm_defineProperty__WEBPACK_IMPORTED_MODULE_6__["default"])(Object(_babel_runtime_corejs2_helpers_esm_assertThisInitialized__WEBPACK_IMPORTED_MODULE_4__["default"])(_this), "nextCard", function () {});
 
-    Object(_babel_runtime_corejs2_helpers_esm_defineProperty__WEBPACK_IMPORTED_MODULE_6__["default"])(Object(_babel_runtime_corejs2_helpers_esm_assertThisInitialized__WEBPACK_IMPORTED_MODULE_4__["default"])(_this), "currentState", function () {
-      console.log(_this.state.active);
-    });
+    Object(_babel_runtime_corejs2_helpers_esm_defineProperty__WEBPACK_IMPORTED_MODULE_6__["default"])(Object(_babel_runtime_corejs2_helpers_esm_assertThisInitialized__WEBPACK_IMPORTED_MODULE_4__["default"])(_this), "prevCard", function () {});
 
-    Object(_babel_runtime_corejs2_helpers_esm_defineProperty__WEBPACK_IMPORTED_MODULE_6__["default"])(Object(_babel_runtime_corejs2_helpers_esm_assertThisInitialized__WEBPACK_IMPORTED_MODULE_4__["default"])(_this), "prevCard", function () {
-      var newIndex = _this.state.active.index;
-
-      _this.setState({
-        active: _data_cards__WEBPACK_IMPORTED_MODULE_11__["default"].cards[newIndex - 1]
-      });
-    });
-
-    _this.state = {
-      cards: _data_cards__WEBPACK_IMPORTED_MODULE_11__["default"].cards,
-      active: _data_cards__WEBPACK_IMPORTED_MODULE_11__["default"].cards[0]
-    };
     return _this;
   }
 
@@ -291,54 +330,42 @@ function (_React$Component) {
         className: _components_carousel_css__WEBPACK_IMPORTED_MODULE_8___default.a.carouselWrapper,
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 33
+          lineNumber: 24
         },
         __self: this
-      }, react__WEBPACK_IMPORTED_MODULE_7___default.a.createElement("div", {
+      }, react__WEBPACK_IMPORTED_MODULE_7___default.a.createElement("h1", {
         className: _components_carousel_css__WEBPACK_IMPORTED_MODULE_8___default.a.carouselTitle,
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 34
+          lineNumber: 25
         },
         __self: this
       }, "Our Services"), react__WEBPACK_IMPORTED_MODULE_7___default.a.createElement("div", {
         className: _components_carousel_css__WEBPACK_IMPORTED_MODULE_8___default.a.carousel,
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 35
+          lineNumber: 26
         },
         __self: this
-      }, react__WEBPACK_IMPORTED_MODULE_7___default.a.createElement("button", {
-        onClick: this.prevCard,
-        disabled: this.state.active.index === 0,
-        __source: {
-          fileName: _jsxFileName,
-          lineNumber: 36
-        },
-        __self: this
-      }, "X"), react__WEBPACK_IMPORTED_MODULE_7___default.a.createElement("div", {
+      }, react__WEBPACK_IMPORTED_MODULE_7___default.a.createElement("div", {
         className: _components_carousel_css__WEBPACK_IMPORTED_MODULE_8___default.a.imageWrapper,
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 39
+          lineNumber: 27
         },
         __self: this
-      }, react__WEBPACK_IMPORTED_MODULE_7___default.a.createElement(_components_Card__WEBPACK_IMPORTED_MODULE_12__["default"], {
-        data: this.state.active,
-        __source: {
-          fileName: _jsxFileName,
-          lineNumber: 40
-        },
-        __self: this
-      })), react__WEBPACK_IMPORTED_MODULE_7___default.a.createElement("button", {
-        onClick: this.nextCard,
-        disabled: this.state.active.index === _data_cards__WEBPACK_IMPORTED_MODULE_11__["default"].cards.length - 1,
-        __source: {
-          fileName: _jsxFileName,
-          lineNumber: 42
-        },
-        __self: this
-      }, "X")));
+      }, _data_cards__WEBPACK_IMPORTED_MODULE_11__["default"].cards.map(function (item) {
+        return react__WEBPACK_IMPORTED_MODULE_7___default.a.createElement(_components_Card__WEBPACK_IMPORTED_MODULE_12__["default"], {
+          img: item.img,
+          key: item.index,
+          link: item.href,
+          __source: {
+            fileName: _jsxFileName,
+            lineNumber: 29
+          },
+          __self: this
+        });
+      }))));
     }
   }]);
 
@@ -436,23 +463,30 @@ function (_React$Component) {
     key: "render",
     value: function render() {
       return react__WEBPACK_IMPORTED_MODULE_7___default.a.createElement("div", {
-        className: _contactFormMap_css__WEBPACK_IMPORTED_MODULE_9___default.a.contactForm,
+        className: _contactFormMap_css__WEBPACK_IMPORTED_MODULE_9___default.a.contactFormWrapper,
         __source: {
           fileName: _jsxFileName,
           lineNumber: 38
         },
         __self: this
       }, react__WEBPACK_IMPORTED_MODULE_7___default.a.createElement("div", {
-        className: _contactFormMap_css__WEBPACK_IMPORTED_MODULE_9___default.a.title,
+        className: _contactFormMap_css__WEBPACK_IMPORTED_MODULE_9___default.a.contactForm,
         __source: {
           fileName: _jsxFileName,
           lineNumber: 39
         },
         __self: this
-      }, "Contact Us"), react__WEBPACK_IMPORTED_MODULE_7___default.a.createElement("form", {
+      }, react__WEBPACK_IMPORTED_MODULE_7___default.a.createElement("div", {
+        className: _contactFormMap_css__WEBPACK_IMPORTED_MODULE_9___default.a.title,
         __source: {
           fileName: _jsxFileName,
           lineNumber: 40
+        },
+        __self: this
+      }, "Contact Us"), react__WEBPACK_IMPORTED_MODULE_7___default.a.createElement("form", {
+        __source: {
+          fileName: _jsxFileName,
+          lineNumber: 41
         },
         __self: this
       }, react__WEBPACK_IMPORTED_MODULE_7___default.a.createElement("input", {
@@ -461,7 +495,7 @@ function (_React$Component) {
         onChange: this.nameChange,
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 41
+          lineNumber: 42
         },
         __self: this
       }), react__WEBPACK_IMPORTED_MODULE_7___default.a.createElement("input", {
@@ -470,7 +504,7 @@ function (_React$Component) {
         onChange: this.emailChange,
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 42
+          lineNumber: 43
         },
         __self: this
       }), react__WEBPACK_IMPORTED_MODULE_7___default.a.createElement("input", {
@@ -479,7 +513,7 @@ function (_React$Component) {
         onChange: this.phoneChange,
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 43
+          lineNumber: 44
         },
         __self: this
       }), react__WEBPACK_IMPORTED_MODULE_7___default.a.createElement("input", {
@@ -488,17 +522,17 @@ function (_React$Component) {
         onChange: this.messageChange,
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 44
+          lineNumber: 45
         },
         __self: this
       }), react__WEBPACK_IMPORTED_MODULE_7___default.a.createElement("button", {
         onClick: this.submit,
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 46
+          lineNumber: 47
         },
         __self: this
-      }, "Submit")));
+      }, "Submit"))));
     }
   }]);
 
@@ -1141,6 +1175,8 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_6___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_6__);
 /* harmony import */ var react_slick__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(/*! react-slick */ "react-slick");
 /* harmony import */ var react_slick__WEBPACK_IMPORTED_MODULE_7___default = /*#__PURE__*/__webpack_require__.n(react_slick__WEBPACK_IMPORTED_MODULE_7__);
+/* harmony import */ var _components_carousel_css__WEBPACK_IMPORTED_MODULE_8__ = __webpack_require__(/*! ../components/carousel.css */ "./components/carousel.css");
+/* harmony import */ var _components_carousel_css__WEBPACK_IMPORTED_MODULE_8___default = /*#__PURE__*/__webpack_require__.n(_components_carousel_css__WEBPACK_IMPORTED_MODULE_8__);
 
 
 
@@ -1148,6 +1184,7 @@ __webpack_require__.r(__webpack_exports__);
 
 
 var _jsxFileName = "C:\\Users\\capen\\Desktop\\WorkProjects\\next-js-starter\\components\\Slick.js";
+
 
 
 
@@ -1166,43 +1203,34 @@ function (_Component) {
     key: "render",
     value: function render() {
       var settings = {
-        dots: true,
+        className: "center",
+        centerMode: true,
         infinite: true,
-        speed: 500,
+        centerPadding: "60px",
         slidesToShow: 3,
-        slidesToScroll: 3
+        speed: 500,
+        cssEase: "linear"
       };
       return react__WEBPACK_IMPORTED_MODULE_6___default.a.createElement("div", {
-        __source: {
-          fileName: _jsxFileName,
-          lineNumber: 15
-        },
-        __self: this
-      }, react__WEBPACK_IMPORTED_MODULE_6___default.a.createElement("h2", {
-        __source: {
-          fileName: _jsxFileName,
-          lineNumber: 16
-        },
-        __self: this
-      }, " Multiple items "), react__WEBPACK_IMPORTED_MODULE_6___default.a.createElement(react_slick__WEBPACK_IMPORTED_MODULE_7___default.a, Object(_babel_runtime_corejs2_helpers_esm_extends__WEBPACK_IMPORTED_MODULE_0__["default"])({}, settings, {
-        __source: {
-          fileName: _jsxFileName,
-          lineNumber: 17
-        },
-        __self: this
-      }), react__WEBPACK_IMPORTED_MODULE_6___default.a.createElement("div", {
+        className: _components_carousel_css__WEBPACK_IMPORTED_MODULE_8___default.a.carouselWrapper,
         __source: {
           fileName: _jsxFileName,
           lineNumber: 18
         },
         __self: this
-      }, react__WEBPACK_IMPORTED_MODULE_6___default.a.createElement("h3", {
+      }, react__WEBPACK_IMPORTED_MODULE_6___default.a.createElement("h2", {
         __source: {
           fileName: _jsxFileName,
           lineNumber: 19
         },
         __self: this
-      }, "1")), react__WEBPACK_IMPORTED_MODULE_6___default.a.createElement("div", {
+      }, "Center Mode"), react__WEBPACK_IMPORTED_MODULE_6___default.a.createElement(react_slick__WEBPACK_IMPORTED_MODULE_7___default.a, Object(_babel_runtime_corejs2_helpers_esm_extends__WEBPACK_IMPORTED_MODULE_0__["default"])({}, settings, {
+        __source: {
+          fileName: _jsxFileName,
+          lineNumber: 20
+        },
+        __self: this
+      }), react__WEBPACK_IMPORTED_MODULE_6___default.a.createElement("div", {
         __source: {
           fileName: _jsxFileName,
           lineNumber: 21
@@ -1214,7 +1242,7 @@ function (_Component) {
           lineNumber: 22
         },
         __self: this
-      }, "2")), react__WEBPACK_IMPORTED_MODULE_6___default.a.createElement("div", {
+      }, "1")), react__WEBPACK_IMPORTED_MODULE_6___default.a.createElement("div", {
         __source: {
           fileName: _jsxFileName,
           lineNumber: 24
@@ -1226,7 +1254,7 @@ function (_Component) {
           lineNumber: 25
         },
         __self: this
-      }, "3")), react__WEBPACK_IMPORTED_MODULE_6___default.a.createElement("div", {
+      }, "2")), react__WEBPACK_IMPORTED_MODULE_6___default.a.createElement("div", {
         __source: {
           fileName: _jsxFileName,
           lineNumber: 27
@@ -1238,7 +1266,7 @@ function (_Component) {
           lineNumber: 28
         },
         __self: this
-      }, "4")), react__WEBPACK_IMPORTED_MODULE_6___default.a.createElement("div", {
+      }, "3")), react__WEBPACK_IMPORTED_MODULE_6___default.a.createElement("div", {
         __source: {
           fileName: _jsxFileName,
           lineNumber: 30
@@ -1250,7 +1278,7 @@ function (_Component) {
           lineNumber: 31
         },
         __self: this
-      }, "5")), react__WEBPACK_IMPORTED_MODULE_6___default.a.createElement("div", {
+      }, "4")), react__WEBPACK_IMPORTED_MODULE_6___default.a.createElement("div", {
         __source: {
           fileName: _jsxFileName,
           lineNumber: 33
@@ -1262,7 +1290,7 @@ function (_Component) {
           lineNumber: 34
         },
         __self: this
-      }, "6")), react__WEBPACK_IMPORTED_MODULE_6___default.a.createElement("div", {
+      }, "5")), react__WEBPACK_IMPORTED_MODULE_6___default.a.createElement("div", {
         __source: {
           fileName: _jsxFileName,
           lineNumber: 36
@@ -1274,31 +1302,7 @@ function (_Component) {
           lineNumber: 37
         },
         __self: this
-      }, "7")), react__WEBPACK_IMPORTED_MODULE_6___default.a.createElement("div", {
-        __source: {
-          fileName: _jsxFileName,
-          lineNumber: 39
-        },
-        __self: this
-      }, react__WEBPACK_IMPORTED_MODULE_6___default.a.createElement("h3", {
-        __source: {
-          fileName: _jsxFileName,
-          lineNumber: 40
-        },
-        __self: this
-      }, "8")), react__WEBPACK_IMPORTED_MODULE_6___default.a.createElement("div", {
-        __source: {
-          fileName: _jsxFileName,
-          lineNumber: 42
-        },
-        __self: this
-      }, react__WEBPACK_IMPORTED_MODULE_6___default.a.createElement("h3", {
-        __source: {
-          fileName: _jsxFileName,
-          lineNumber: 43
-        },
-        __self: this
-      }, "9"))));
+      }, "6"))));
     }
   }]);
 
@@ -1319,6 +1323,7 @@ function (_Component) {
 module.exports = {
 	"bannerWrapper": "bannerWrapper___1QVkh",
 	"title": "title___lHFqs",
+	"shadow": "shadow___14oS8",
 	"image": "image___ohk0X"
 };
 
@@ -1334,8 +1339,8 @@ module.exports = {
 module.exports = {
 	"carouselWrapper": "carouselWrapper___qz1ci",
 	"carousel": "carousel___2vM-W",
-	"carouselTitle": "carouselTitle___2qt1Y",
-	"imageWrapper": "imageWrapper___25qmt"
+	"imageWrapper": "imageWrapper___25qmt",
+	"image": "image___2KLfO"
 };
 
 /***/ }),
@@ -1382,6 +1387,20 @@ module.exports = {
 	"linkWrapper": "linkWrapper___3hNju",
 	"contactBar": "contactBar___3m9ZO",
 	"contactButton": "contactButton___2oLtU"
+};
+
+/***/ }),
+
+/***/ "./components/home-banner.css":
+/*!************************************!*\
+  !*** ./components/home-banner.css ***!
+  \************************************/
+/*! no static exports found */
+/***/ (function(module, exports) {
+
+module.exports = {
+	"textWrapper": "textWrapper___M84ax",
+	"bannerWrapper": "bannerWrapper___2H5JF"
 };
 
 /***/ }),
@@ -2740,7 +2759,10 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _data_paragraphimageright_json__WEBPACK_IMPORTED_MODULE_8__ = __webpack_require__(/*! ../data/paragraphimageright.json */ "./data/paragraphimageright.json");
 var _data_paragraphimageright_json__WEBPACK_IMPORTED_MODULE_8___namespace = /*#__PURE__*/__webpack_require__.t(/*! ../data/paragraphimageright.json */ "./data/paragraphimageright.json", 1);
 /* harmony import */ var _components_Slick__WEBPACK_IMPORTED_MODULE_9__ = __webpack_require__(/*! ../components/Slick */ "./components/Slick.js");
+/* harmony import */ var _components_paragraphimageright_css__WEBPACK_IMPORTED_MODULE_10__ = __webpack_require__(/*! ../components/paragraphimageright.css */ "./components/paragraphimageright.css");
+/* harmony import */ var _components_paragraphimageright_css__WEBPACK_IMPORTED_MODULE_10___default = /*#__PURE__*/__webpack_require__.n(_components_paragraphimageright_css__WEBPACK_IMPORTED_MODULE_10__);
 var _jsxFileName = "C:\\Users\\capen\\Desktop\\WorkProjects\\next-js-starter\\pages\\index.js";
+
 
 
 
@@ -2756,19 +2778,19 @@ var Index = function Index() {
   return react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 13
+      lineNumber: 15
     },
     __self: this
   }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(next_server_head__WEBPACK_IMPORTED_MODULE_2___default.a, {
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 14
+      lineNumber: 16
     },
     __self: this
   }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("style", {
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 15
+      lineNumber: 17
     },
     __self: this
   }, "\n                body {\n                margin: 0;\n                }"), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("meta", {
@@ -2776,7 +2798,7 @@ var Index = function Index() {
     content: "width=device-width, initial-scale=1",
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 21
+      lineNumber: 23
     },
     __self: this
   }), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("link", {
@@ -2786,7 +2808,7 @@ var Index = function Index() {
     href: "https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.6.0/slick.min.css",
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 22
+      lineNumber: 24
     },
     __self: this
   }), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("link", {
@@ -2795,45 +2817,49 @@ var Index = function Index() {
     href: "https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.6.0/slick-theme.min.css",
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 23
+      lineNumber: 25
     },
     __self: this
   })), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_components_Header__WEBPACK_IMPORTED_MODULE_1__["default"], {
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 25
-    },
-    __self: this
-  }), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_components_Banner__WEBPACK_IMPORTED_MODULE_3__["default"], {
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 26
-    },
-    __self: this
-  }), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_components_ParagraphImageRight__WEBPACK_IMPORTED_MODULE_4__["default"], {
-    data: _data_paragraphimageright_json__WEBPACK_IMPORTED_MODULE_8__,
-    id: 0,
-    __source: {
-      fileName: _jsxFileName,
       lineNumber: 27
     },
     __self: this
-  }), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_components_Slick__WEBPACK_IMPORTED_MODULE_9__["default"], {
+  }), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_components_Banner__WEBPACK_IMPORTED_MODULE_3__["default"], {
+    text: "Rupps Trucking & Excavation",
+    button: "Contact Us",
+    h2: "LoremIpsum",
     __source: {
       fileName: _jsxFileName,
       lineNumber: 28
     },
     __self: this
-  }), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_components_ContactFormMap__WEBPACK_IMPORTED_MODULE_6__["default"], {
+  }), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_components_ParagraphImageRight__WEBPACK_IMPORTED_MODULE_4__["default"], {
+    className: _components_paragraphimageright_css__WEBPACK_IMPORTED_MODULE_10___default.a.home,
+    data: _data_paragraphimageright_json__WEBPACK_IMPORTED_MODULE_8__,
+    id: 0,
     __source: {
       fileName: _jsxFileName,
       lineNumber: 29
     },
     __self: this
-  }), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_components_Footer__WEBPACK_IMPORTED_MODULE_7__["default"], {
+  }), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_components_Carousel__WEBPACK_IMPORTED_MODULE_5__["default"], {
     __source: {
       fileName: _jsxFileName,
       lineNumber: 30
+    },
+    __self: this
+  }), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_components_ContactFormMap__WEBPACK_IMPORTED_MODULE_6__["default"], {
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 31
+    },
+    __self: this
+  }), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_components_Footer__WEBPACK_IMPORTED_MODULE_7__["default"], {
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 32
     },
     __self: this
   }));

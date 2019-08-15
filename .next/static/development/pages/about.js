@@ -173,14 +173,17 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _babel_runtime_corejs2_helpers_esm_inherits__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! @babel/runtime-corejs2/helpers/esm/inherits */ "./node_modules/@babel/runtime-corejs2/helpers/esm/inherits.js");
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! react */ "./node_modules/react/index.js");
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_5___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_5__);
-/* harmony import */ var _components_banner_css__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! ../components/banner.css */ "./components/banner.css");
-/* harmony import */ var _components_banner_css__WEBPACK_IMPORTED_MODULE_6___default = /*#__PURE__*/__webpack_require__.n(_components_banner_css__WEBPACK_IMPORTED_MODULE_6__);
+/* harmony import */ var _components_home_banner_css__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! ../components/home-banner.css */ "./components/home-banner.css");
+/* harmony import */ var _components_home_banner_css__WEBPACK_IMPORTED_MODULE_6___default = /*#__PURE__*/__webpack_require__.n(_components_home_banner_css__WEBPACK_IMPORTED_MODULE_6__);
+/* harmony import */ var _components_banner_css__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(/*! ../components/banner.css */ "./components/banner.css");
+/* harmony import */ var _components_banner_css__WEBPACK_IMPORTED_MODULE_7___default = /*#__PURE__*/__webpack_require__.n(_components_banner_css__WEBPACK_IMPORTED_MODULE_7__);
 
 
 
 
 
 var _jsxFileName = "C:\\Users\\capen\\Desktop\\WorkProjects\\next-js-starter\\components\\Banner.js";
+
 
 
 
@@ -197,30 +200,75 @@ function (_React$Component) {
 
   Object(_babel_runtime_corejs2_helpers_esm_createClass__WEBPACK_IMPORTED_MODULE_1__["default"])(Banner, [{
     key: "render",
-    value: function render() {
-      return react__WEBPACK_IMPORTED_MODULE_5___default.a.createElement("div", {
-        className: _components_banner_css__WEBPACK_IMPORTED_MODULE_6___default.a.bannerWrapper,
-        __source: {
-          fileName: _jsxFileName,
-          lineNumber: 7
-        },
-        __self: this
-      }, react__WEBPACK_IMPORTED_MODULE_5___default.a.createElement("img", {
-        className: _components_banner_css__WEBPACK_IMPORTED_MODULE_6___default.a.image,
-        src: '../static/image-one.jpg',
-        __source: {
-          fileName: _jsxFileName,
-          lineNumber: 8
-        },
-        __self: this
-      }), react__WEBPACK_IMPORTED_MODULE_5___default.a.createElement("div", {
-        className: _components_banner_css__WEBPACK_IMPORTED_MODULE_6___default.a.title,
-        __source: {
-          fileName: _jsxFileName,
-          lineNumber: 9
-        },
-        __self: this
-      }, this.props.text));
+    value: function render(props) {
+      if (this.props.button) {
+        return react__WEBPACK_IMPORTED_MODULE_5___default.a.createElement("div", {
+          className: _components_home_banner_css__WEBPACK_IMPORTED_MODULE_6___default.a.bannerWrapper,
+          __source: {
+            fileName: _jsxFileName,
+            lineNumber: 8
+          },
+          __self: this
+        }, react__WEBPACK_IMPORTED_MODULE_5___default.a.createElement("img", {
+          className: _components_banner_css__WEBPACK_IMPORTED_MODULE_7___default.a.image,
+          src: '../static/image-one.jpg',
+          __source: {
+            fileName: _jsxFileName,
+            lineNumber: 9
+          },
+          __self: this
+        }), react__WEBPACK_IMPORTED_MODULE_5___default.a.createElement("div", {
+          className: _components_home_banner_css__WEBPACK_IMPORTED_MODULE_6___default.a.textWrapper,
+          __source: {
+            fileName: _jsxFileName,
+            lineNumber: 10
+          },
+          __self: this
+        }, react__WEBPACK_IMPORTED_MODULE_5___default.a.createElement("div", {
+          className: _components_home_banner_css__WEBPACK_IMPORTED_MODULE_6___default.a.title,
+          __source: {
+            fileName: _jsxFileName,
+            lineNumber: 11
+          },
+          __self: this
+        }, this.props.text), react__WEBPACK_IMPORTED_MODULE_5___default.a.createElement("h3", {
+          __source: {
+            fileName: _jsxFileName,
+            lineNumber: 12
+          },
+          __self: this
+        }, this.props.h2), react__WEBPACK_IMPORTED_MODULE_5___default.a.createElement("button", {
+          __source: {
+            fileName: _jsxFileName,
+            lineNumber: 13
+          },
+          __self: this
+        }, this.props.button)));
+      } else {
+        return react__WEBPACK_IMPORTED_MODULE_5___default.a.createElement("div", {
+          className: _components_banner_css__WEBPACK_IMPORTED_MODULE_7___default.a.bannerWrapper,
+          __source: {
+            fileName: _jsxFileName,
+            lineNumber: 18
+          },
+          __self: this
+        }, react__WEBPACK_IMPORTED_MODULE_5___default.a.createElement("img", {
+          className: _components_banner_css__WEBPACK_IMPORTED_MODULE_7___default.a.image,
+          src: '../static/image-one.jpg',
+          __source: {
+            fileName: _jsxFileName,
+            lineNumber: 19
+          },
+          __self: this
+        }), react__WEBPACK_IMPORTED_MODULE_5___default.a.createElement("div", {
+          className: _components_banner_css__WEBPACK_IMPORTED_MODULE_7___default.a.title,
+          __source: {
+            fileName: _jsxFileName,
+            lineNumber: 20
+          },
+          __self: this
+        }, this.props.text));
+      }
     }
   }]);
 

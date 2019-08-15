@@ -1,19 +1,22 @@
 import React, { Component } from "react";
 import Slider from 'react-slick';
+import css from '../components/carousel.css'
 
 
 class Slick extends Component {
     render() {
         const settings = {
-          dots: true,
+          className: "center",
+          centerMode: true,
           infinite: true,
-          speed: 500,
+          centerPadding: "60px",
           slidesToShow: 3,
-          slidesToScroll: 3
+          speed: 500,
+          cssEase: "linear"
         };
         return (
-          <div>
-            <h2> Multiple items </h2>
+          <div className={css.carouselWrapper}>
+            <h2>Center Mode</h2>
             <Slider {...settings}>
               <div>
                 <h3>1</h3>
@@ -32,15 +35,6 @@ class Slick extends Component {
               </div>
               <div>
                 <h3>6</h3>
-              </div>
-              <div>
-                <h3>7</h3>
-              </div>
-              <div>
-                <h3>8</h3>
-              </div>
-              <div>
-                <h3>9</h3>
               </div>
             </Slider>
           </div>

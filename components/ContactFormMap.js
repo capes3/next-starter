@@ -35,7 +35,8 @@ class ContactForm extends React.Component {
     }
 
   render () {
-    return <div className={css.contactForm}>
+    return <div className={css.contactFormWrapper}>
+        <div className={css.contactForm}>
         <div className={css.title}>Contact Us</div>
         <form>
       <input type="text" value={this.state.value} onChange={this.nameChange}/>
@@ -45,6 +46,7 @@ class ContactForm extends React.Component {
 
       <button onClick={this.submit}>Submit</button>
       </form>
+      </div>
     </div>
   }
 }

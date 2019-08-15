@@ -3,11 +3,14 @@
     justify-content: center;
     flex-direction: column;
     margin-top: 5px;
+    background-color:black;
+    padding:35px;
 }
 
 .title{
     align-self:center;
     margin: 20px 0;
+    color:white;
 }
 
 .contactForm form {

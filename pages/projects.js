@@ -22,7 +22,7 @@ const Projects = () => (
             <meta name="viewport" content="width=device-width, initial-scale=1"></meta>
         </Head>
         <Header/>
-        <Banner/>
+        <Banner text={"Completed Projects"}/>
         <AlternatingImg data={data}/>
         <Footer/>
     </div>
