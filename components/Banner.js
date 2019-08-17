@@ -1,4 +1,5 @@
 import React from 'react'
+import Head from 'next/head'
 import style from '../components/home-banner.css'
 import css from '../components/banner.css'
 

@@ -166,6 +166,7 @@ button:focus {outline:0;}
 .bannerWrapper___1QVkh{
     position:relative;
     text-align:center;
+    font-family: 'Oswald', sans-serif;   
 }
 
 .title___lHFqs{
@@ -232,6 +233,10 @@ p {
     align-self: center;
 }
 
+.home___34OCf h1{
+    padding-left:10px;
+}
+
 .firstParagraph___3xpkS{
     
 }
@@ -262,6 +267,7 @@ p {
     width:100%;
     display: flex;
     flex-direction: column;
+    position: relative;
 }
 
 .carousel___2vM-W{
@@ -287,9 +293,16 @@ p {
     overflow: auto;
     margin: 20px;
     -webkit-user-drag: auto;
+    position: relative;
 }
 
-
+.hideScroll___2RBcv{
+    background-color: white;
+    position: absolute;
+    bottom: 20px;
+    width: 100%;
+    height: 30px;
+}
 
 .image___2KLfO{
     flex: 20 0 auto;
@@ -325,8 +338,9 @@ p {
 
 .title___Vgl0q{
     align-self:center;
-    margin: 20px 0;
+    margin: 0px 0 40px 0;
     color:white;
+    font-size:1.75em;
 }
 
 .contactForm___1dxJs form {
@@ -339,11 +353,23 @@ p {
 
 .contactForm___1dxJs form input{
     align-self: center;
+    background-color:black;
+    outline-color:white;
+    color:white;
+    border: 1px solid white;
 }
 
 .contactForm___1dxJs form button{
-    width:25%;
-    align-self:center;
+    background-color: darkcyan;
+    border: none;
+    color: white;
+    padding: 4px 0px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 15px;
+    margin: 4px 45px;
+    cursor: pointer;
 }
 
 @media screen and (min-width: 600px) {
@@ -369,54 +395,6 @@ p {
     background-color:black;
     margin-top:20px;
 }
-
-@media screen and (min-width: 600px) {
-   
-}
-
-@media screen and (min-width: 900px) {
- 
-}
-
-@media screen and (min-width: 1200px) {
- 
-}
-
-@media screen and (min-width: 1800px) {
- 
-}
-
-.wrapper___3yMX7{
-    display:flex;
-    flex-direction: column;
-    align-items: flex-start;
-    width:80%;
-    margin:20px 0px 25px;
-    align-self: center;
-}
-
-.title___1nf0U{
-    align-self:center;
-    padding: 10px 0px 10px;
-    color:darkcyan;
-    font-size: 2em;
-}
-
-.item___3byWd{
-    width:100%;
-}
-
-.itemWrapper___1iU0Q{
-    width:100%;
-}
-
-.itemTitle___olevx{
-    background-color:lightgray;
-    width:100%;
-    font-size:1.15em;
-    padding: 5px 0px 5px 10px;
-}
-
 
 @media screen and (min-width: 600px) {
    

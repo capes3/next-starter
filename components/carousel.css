@@ -2,6 +2,7 @@
     width:100%;
     display: flex;
     flex-direction: column;
+    position: relative;
 }
 
 .carousel{
@@ -27,9 +28,16 @@
     overflow: auto;
     margin: 20px;
     -webkit-user-drag: auto;
+    position: relative;
 }
 
-
+.hideScroll{
+    background-color: white;
+    position: absolute;
+    bottom: 20px;
+    width: 100%;
+    height: 30px;
+}
 
 .image{
     flex: 20 0 auto;

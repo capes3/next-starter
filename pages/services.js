@@ -18,6 +18,7 @@ const Services = () => (
                 }`
                 }
             </style>
+            <link href="https://fonts.googleapis.com/css?family=Lato|Oswald&display=swap" rel="stylesheet"/>
             <meta name="viewport" content="width=device-width, initial-scale=1"></meta>
         </Head>
         <Header/>

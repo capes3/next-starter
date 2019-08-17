@@ -18,20 +18,24 @@ class ContactForm extends React.Component {
         this.setState({name:e.target.value})
     }
 
-    emailChange = () => {
+    emailChange = (e) => {
         this.setState({email:e.target.value})
     }
 
-    phoneChange = () => {
+    phoneChange = (e) => {
         this.setState({phone:e.target.value})
     }
 
-    messageChange = () => {
+    messageChange = (e) => {
         this.setState({message:e.target.value})
     }
 
-    submit = () => {
+    submit = (e) => {
         console.log(this.state.name)
+        console.log(this.state.email)
+        console.log(this.state.phone)
+        console.log(this.state.message)
+
     }
 
   render () {
@@ -44,7 +48,7 @@ class ContactForm extends React.Component {
       <input type="text" value={this.state.value} onChange={this.phoneChange}/>
       <input type="text" value={this.state.value} onChange={this.messageChange}/>
 
-      <button onClick={this.submit}>Submit</button>
+      <button onClick={this.submit}>Send</button>
       </form>
       </div>
     </div>

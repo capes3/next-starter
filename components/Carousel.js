@@ -32,8 +32,8 @@ class Carousel extends React.Component {
                         />
                   ))}
               </div>
-            
           </div>
+          <div className={css.hideScroll}></div>
       </div>
     )}
 }
