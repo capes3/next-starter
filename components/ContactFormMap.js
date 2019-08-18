@@ -43,10 +43,10 @@ class ContactForm extends React.Component {
         <div className={css.contactForm}>
         <div className={css.title}>Contact Us</div>
         <form>
-      <input type="text" value={this.state.value} onChange={this.nameChange}/>
-      <input type="text" value={this.state.value} onChange={this.emailChange}/>
-      <input type="text" value={this.state.value} onChange={this.phoneChange}/>
-      <input type="text" value={this.state.value} onChange={this.messageChange}/>
+      <input type="text" placeholder="NAME" onChange={this.nameChange}/>
+      <input type="text" placeholder="EMAIL" onChange={this.emailChange}/>
+      <input type="text" placeholder="PHONE" onChange={this.phoneChange}/>
+      <textarea className={css.message} type="text" placeholder="MESSAGE" onChange={this.messageChange}/>
 
       <button onClick={this.submit}>Send</button>
       </form>

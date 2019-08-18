@@ -65,26 +65,10 @@
       "publicPath": "static/chunks/styles.js"
     }
   ],
-  "./footer.css": [
-    {
-      "id": "./components/footer.css",
-      "name": "./components/footer.css",
-      "file": "static/chunks/styles.js",
-      "publicPath": "static/chunks/styles.js"
-    }
-  ],
   "../components/home-banner.css": [
     {
       "id": "./components/home-banner.css",
       "name": "./components/home-banner.css",
-      "file": "static/chunks/styles.js",
-      "publicPath": "static/chunks/styles.js"
-    }
-  ],
-  "../components/carousel.css": [
-    {
-      "id": "./components/carousel.css",
-      "name": "./components/carousel.css",
       "file": "static/chunks/styles.js",
       "publicPath": "static/chunks/styles.js"
     }
@@ -97,10 +81,10 @@
       "publicPath": "static/chunks/styles.js"
     }
   ],
-  "./contactFormMap.css": [
+  "../components/carousel.css": [
     {
-      "id": "./components/contactFormMap.css",
-      "name": "./components/contactFormMap.css",
+      "id": "./components/carousel.css",
+      "name": "./components/carousel.css",
       "file": "static/chunks/styles.js",
       "publicPath": "static/chunks/styles.js"
     }
@@ -109,6 +93,22 @@
     {
       "id": "./components/banner.css",
       "name": "./components/banner.css",
+      "file": "static/chunks/styles.js",
+      "publicPath": "static/chunks/styles.js"
+    }
+  ],
+  "./contactFormMap.css": [
+    {
+      "id": "./components/contactFormMap.css",
+      "name": "./components/contactFormMap.css",
+      "file": "static/chunks/styles.js",
+      "publicPath": "static/chunks/styles.js"
+    }
+  ],
+  "./footer.css": [
+    {
+      "id": "./components/footer.css",
+      "name": "./components/footer.css",
       "file": "static/chunks/styles.js",
       "publicPath": "static/chunks/styles.js"
     }

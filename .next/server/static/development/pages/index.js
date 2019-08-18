@@ -504,7 +504,7 @@ function (_React$Component) {
         __self: this
       }, react__WEBPACK_IMPORTED_MODULE_7___default.a.createElement("input", {
         type: "text",
-        value: this.state.value,
+        placeholder: "NAME",
         onChange: this.nameChange,
         __source: {
           fileName: _jsxFileName,
@@ -513,7 +513,7 @@ function (_React$Component) {
         __self: this
       }), react__WEBPACK_IMPORTED_MODULE_7___default.a.createElement("input", {
         type: "text",
-        value: this.state.value,
+        placeholder: "EMAIL",
         onChange: this.emailChange,
         __source: {
           fileName: _jsxFileName,
@@ -522,16 +522,17 @@ function (_React$Component) {
         __self: this
       }), react__WEBPACK_IMPORTED_MODULE_7___default.a.createElement("input", {
         type: "text",
-        value: this.state.value,
+        placeholder: "PHONE",
         onChange: this.phoneChange,
         __source: {
           fileName: _jsxFileName,
           lineNumber: 48
         },
         __self: this
-      }), react__WEBPACK_IMPORTED_MODULE_7___default.a.createElement("input", {
+      }), react__WEBPACK_IMPORTED_MODULE_7___default.a.createElement("textarea", {
+        className: _contactFormMap_css__WEBPACK_IMPORTED_MODULE_9___default.a.message,
         type: "text",
-        value: this.state.value,
+        placeholder: "MESSAGE",
         onChange: this.messageChange,
         __source: {
           fileName: _jsxFileName,
@@ -598,7 +599,7 @@ function (_React$Component) {
     key: "render",
     value: function render() {
       return react__WEBPACK_IMPORTED_MODULE_5___default.a.createElement("div", {
-        className: _footer_css__WEBPACK_IMPORTED_MODULE_6___default.a.wrapper,
+        className: _footer_css__WEBPACK_IMPORTED_MODULE_6___default.a.footer,
         __source: {
           fileName: _jsxFileName,
           lineNumber: 6
@@ -1368,7 +1369,8 @@ module.exports = {
 
 module.exports = {
 	"contactForm": "contactForm___1dxJs",
-	"title": "title___Vgl0q"
+	"title": "title___Vgl0q",
+	"message": "message___3MW83"
 };
 
 /***/ }),
@@ -1381,7 +1383,7 @@ module.exports = {
 /***/ (function(module, exports) {
 
 module.exports = {
-	"wrapper": "wrapper___3kmjn"
+	"footer": "footer___J0gcl"
 };
 
 /***/ }),
@@ -2843,10 +2845,18 @@ var Index = function Index() {
       lineNumber: 27
     },
     __self: this
+  }), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("link", {
+    rel: "stylesheet",
+    href: "/static/base.css",
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 28
+    },
+    __self: this
   })), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_components_Header__WEBPACK_IMPORTED_MODULE_1__["default"], {
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 29
+      lineNumber: 30
     },
     __self: this
   }), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_components_Banner__WEBPACK_IMPORTED_MODULE_3__["default"], {
@@ -2855,7 +2865,7 @@ var Index = function Index() {
     h2: "LoremIpsum",
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 30
+      lineNumber: 31
     },
     __self: this
   }), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_components_ParagraphImageRight__WEBPACK_IMPORTED_MODULE_4__["default"], {
@@ -2864,25 +2874,25 @@ var Index = function Index() {
     id: 0,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 31
+      lineNumber: 32
     },
     __self: this
   }), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_components_Carousel__WEBPACK_IMPORTED_MODULE_5__["default"], {
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 32
+      lineNumber: 33
     },
     __self: this
   }), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_components_ContactFormMap__WEBPACK_IMPORTED_MODULE_6__["default"], {
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 33
+      lineNumber: 34
     },
     __self: this
   }), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_components_Footer__WEBPACK_IMPORTED_MODULE_7__["default"], {
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 34
+      lineNumber: 35
     },
     __self: this
   }));

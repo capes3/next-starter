@@ -3,7 +3,7 @@ import css from './footer.css'
 
 class Footer extends React.Component {
     render () {
-      return <div className={css.wrapper}>
+      return <div className={css.footer}>
         <div>
           logo
         </div>
