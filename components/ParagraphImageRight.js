@@ -11,7 +11,6 @@ constructor(props){
 
 
     render(props){
-        const index = this.props
         return(
             <div className={this.props.className}>
                 <h1>{this.props.data.data[this.props.id].title}</h1>

@@ -1,9 +1,30 @@
 .footer {
-    height:50px;
+    height:auto;
     width: 100%;
     color: white;
     background-color:black;
-    margin-top:20px;
+    display: flex;
+    flex-direction:column;
+    align-content: center;
+}
+
+.footer div {
+    margin-left:auto;
+    margin-right:auto;
+    display:block;
+    padding-top:20px;
+}
+
+
+.contacts div {
+    display:flex;
+    max-width: 400px;
+    align-items: center;
+    padding: 10px 0;
+}
+
+.contacts div img {
+    padding-right:5px;
 }
 
 @media screen and (min-width: 600px) {
