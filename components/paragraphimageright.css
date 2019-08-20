@@ -26,12 +26,16 @@ p {
     padding-left:10px;
 }
 
-.firstParagraph{
+.firstParagraph h1{
     padding-left:10px;
 }
 
-.secondParagraph{
+.secondParagraph {
     background-color: lightgray;
+}
+
+.secondParagraph h1 {
+    padding-left:10px;
 }
 
 
