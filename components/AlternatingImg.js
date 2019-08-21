@@ -1,4 +1,5 @@
 import React from 'react'
+import css from '../components/alternatingImg.css'
 
 //probably map the data into a child component, then use that child component to determine
 //which side of the page the image is rendered on.  On smaller screens just remove 
@@ -12,9 +13,9 @@ class AlternatingImg extends React.Component {
 
     render () {
         const titleArray = this.props.data.title
-      return <div>
+      return <div className={css.wrapper}>
         {titleArray.map((object, i) => 
-        <div>
+        <div className={css.alternateItems}>
             <AlternatingItem title={object} index={i}/>
         </div>
         )}
@@ -29,14 +30,16 @@ class AlternatingImg extends React.Component {
 //depending on whether the key is odd or even.  
     render () {
         if(this.props.index%2 === 0){
-        return <div>
-            {console.log(this.props.index)}
-            {console.log(this.props.title.image)}
-            <img src={this.props.title.image}/>
+        return <div className={css.odds}>
+            <div>{this.props.title.title}</div>
+            <img src={this.props.title.image}/> 
+            <p>{this.props.title.content}</p>
         </div>
         }else{
-            return <div>
-                this is not the key {this.props.index}
+            return <div className={css.evens}>
+                <div>{this.props.title.title}</div>
+                <img src={this.props.title.image}/>
+                <p>{this.props.title.content}</p>
             </div>
         }
     }

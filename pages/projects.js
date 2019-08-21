@@ -21,6 +21,8 @@ const Projects = () => (
             </style>
             <link href="https://fonts.googleapis.com/css?family=Lato|Oswald&display=swap" rel="stylesheet"/>
             <meta name="viewport" content="width=device-width, initial-scale=1"></meta>
+            <link rel="stylesheet" href="/static/base.css" />
+
         </Head>
         <Header/>
         <Banner text={"Completed Projects"}/>
