@@ -26,6 +26,7 @@ const Index = () => (
             <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.6.0/slick-theme.min.css" />
             <link href="https://fonts.googleapis.com/css?family=Lato|Oswald" rel="stylesheet"/>
             <link rel="stylesheet" href="/static/base.css" />
+            <script src="https://unpkg.com/boxicons@latest/dist/boxicons.js"></script>
         </Head>
         <Header/>
         <Banner text={"Rupps Trucking & Excavation"} button={"Contact Us"} h2={"LoremIpsum"} />

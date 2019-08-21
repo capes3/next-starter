@@ -10,13 +10,13 @@ class Carousel extends React.Component {
   
 
   nextCard = () => {
-    
+    document.getElementById("slider").scrollLeft +=200;
   }
 
   
 
   prevCard = () => {
-    
+    document.getElementById("slider").scrollLeft -=200;
   }
 
   render () {
@@ -24,7 +24,10 @@ class Carousel extends React.Component {
       <div className={css.carouselWrapper}>
         <h1 className={css.carouselTitle}>Our Services</h1>
           <div className={css.carousel}>
-              <div className={css.imageWrapper}>
+          <button className={css.left}onClick={this.prevCard}>
+          <box-icon name="left-arrow" color="white"></box-icon>
+          </button>
+              <div id="slider"className={css.imageWrapper}>
                 {data.cards.map((item => 
                   <Card img={item.img}
                         key={item.index}
@@ -32,6 +35,9 @@ class Carousel extends React.Component {
                         />
                   ))}
               </div>
+              <button className={css.right}onClick={this.nextCard}>
+              <box-icon name="right-arrow" color="white"></box-icon>
+              </button>
           </div>
           <div className={css.hideScroll}></div>
       </div>

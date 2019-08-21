@@ -288,16 +288,26 @@ p {
 
 .carousel___2vM-W button {
     align-self:center;
-    width:25px;
+    border:none;
 }
 
 .imageWrapper___25qmt{
     align-self:center;
     display: flex;
     overflow: auto;
+    overflow-y: hidden;
     margin: 20px;
     -webkit-user-drag: auto;
     position: relative;
+    scroll-behavior: smooth;
+}
+
+.imageWrapper___25qmt .left___X6zI1{
+    position: absolute;
+}
+
+.imageWrapper___25qmt .right___1xStR{
+    position: absolute;
 }
 
 .hideScroll___2RBcv{

@@ -19,16 +19,26 @@
 
 .carousel button {
     align-self:center;
-    width:25px;
+    border:none;
 }
 
 .imageWrapper{
     align-self:center;
     display: flex;
     overflow: auto;
+    overflow-y: hidden;
     margin: 20px;
     -webkit-user-drag: auto;
     position: relative;
+    scroll-behavior: smooth;
+}
+
+.imageWrapper .left{
+    position: absolute;
+}
+
+.imageWrapper .right{
+    position: absolute;
 }
 
 .hideScroll{
