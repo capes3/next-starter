@@ -488,9 +488,13 @@ p {
     text-decoration: none;
     display: inline-block;
     font-size: 15px;
-    margin: 4px 45px;
     cursor: pointer;
     border-radius: 2px;
+    width: 100px;
+    max-width: 300px;
+    margin-left:auto;
+    margin-right:auto;
+    margin-top: 5px;
 }
 
 .message___3MW83 {
@@ -507,7 +511,7 @@ p {
     margin-bottom: 10px;
 }
 @media screen and (min-width: 600px) {
-   
+    
 }
 
 @media screen and (min-width: 900px) {
