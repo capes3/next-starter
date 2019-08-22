@@ -21,6 +21,7 @@ const About = () => (
             <link href="https://fonts.googleapis.com/css?family=Lato|Oswald&display=swap" rel="stylesheet"/>
             <meta name="viewport" content="width=device-width, initial-scale=1"></meta>
             <link rel="stylesheet" href="/static/base.css" />
+            <script src="https://unpkg.com/boxicons@latest/dist/boxicons.js"></script>
         </Head>
         <Header/>
         <Banner text={"About Us"}/>

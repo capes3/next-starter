@@ -11,14 +11,14 @@
 
 .logo___2qumV{
     height: 90px;
-    top: 18px;
+    top: 25px;
     position: absolute;
     z-index: 1;
 }
 
 .headerWrapper___snjFD{
     width: 100%;
-    height: 50px;
+    height: 70px;
     background-color:white;
     display:flex;
     flex-wrap:wrap;
@@ -35,7 +35,7 @@
 
 .contactBar___3m9ZO{
     background-color:black;
-    height:3%;
+    height:25px;
     position: absolute;
     width:100%;
     flex-basis:100%;
@@ -43,6 +43,17 @@
     display:flex;
     flex-direction:row;
     justify-content: space-between;
+    align-items: center;
+}
+
+.social___2bccx {
+    display:flex;
+    flex-direction:row;
+    align-items:center;
+}
+
+.social___2bccx div{
+    padding:0 0 0 0;
 }
 
 @media screen and (min-width: 600px) {
@@ -109,7 +120,7 @@
     display: flex;
     flex-direction: column; 
     right:0px;
-    top:55px;
+    top:74px;
     z-index: 1;
 }
 
@@ -289,6 +300,8 @@ p {
 .carousel___2vM-W button {
     align-self:center;
     border:none;
+    /* margin: 0 5px; */
+    background: none;
 }
 
 .imageWrapper___25qmt{

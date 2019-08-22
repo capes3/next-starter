@@ -25,7 +25,7 @@ class Carousel extends React.Component {
         <h1 className={css.carouselTitle}>Our Services</h1>
           <div className={css.carousel}>
           <button className={css.left}onClick={this.prevCard}>
-          <box-icon name="left-arrow" color="white"></box-icon>
+          <box-icon name="left-arrow" color="black"></box-icon>
           </button>
               <div id="slider"className={css.imageWrapper}>
                 {data.cards.map((item => 
@@ -36,7 +36,7 @@ class Carousel extends React.Component {
                   ))}
               </div>
               <button className={css.right}onClick={this.nextCard}>
-              <box-icon name="right-arrow" color="white"></box-icon>
+              <box-icon name="right-arrow" color="black"></box-icon>
               </button>
           </div>
           <div className={css.hideScroll}></div>

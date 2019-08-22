@@ -16,7 +16,7 @@ const Header = () => (
             (435)257-7333
         </div>
         <div className={css.social}>
-            follow us on:
+            <div>follow us on:</div><box-icon name='facebook-square' type='logo' color="white"></box-icon>
         </div>
     </div>
     <div className={css.headerWrapper}>

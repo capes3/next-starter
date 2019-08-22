@@ -20,6 +20,8 @@
 .carousel button {
     align-self:center;
     border:none;
+    /* margin: 0 5px; */
+    background: none;
 }
 
 .imageWrapper{

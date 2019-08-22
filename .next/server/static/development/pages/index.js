@@ -364,7 +364,7 @@ function (_React$Component) {
         __self: this
       }, react__WEBPACK_IMPORTED_MODULE_7___default.a.createElement("box-icon", {
         name: "left-arrow",
-        color: "white",
+        color: "black",
         __source: {
           fileName: _jsxFileName,
           lineNumber: 28
@@ -399,7 +399,7 @@ function (_React$Component) {
         __self: this
       }, react__WEBPACK_IMPORTED_MODULE_7___default.a.createElement("box-icon", {
         name: "right-arrow",
-        color: "white",
+        color: "black",
         __source: {
           fileName: _jsxFileName,
           lineNumber: 39
@@ -824,7 +824,22 @@ var Header = function Header() {
       lineNumber: 18
     },
     __self: this
-  }, "follow us on:")), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+  }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 19
+    },
+    __self: this
+  }, "follow us on:"), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("box-icon", {
+    name: "facebook-square",
+    type: "logo",
+    color: "white",
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 19
+    },
+    __self: this
+  }))), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
     className: _components_header_css__WEBPACK_IMPORTED_MODULE_4___default.a.headerWrapper,
     __source: {
       fileName: _jsxFileName,
@@ -1497,6 +1512,7 @@ module.exports = {
 	"headerWrapper": "headerWrapper___snjFD",
 	"linkWrapper": "linkWrapper___3hNju",
 	"contactBar": "contactBar___3m9ZO",
+	"social": "social___2bccx",
 	"contactButton": "contactButton___2oLtU"
 };
 

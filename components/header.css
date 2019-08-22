@@ -11,14 +11,14 @@
 
 .logo{
     height: 90px;
-    top: 18px;
+    top: 25px;
     position: absolute;
     z-index: 1;
 }
 
 .headerWrapper{
     width: 100%;
-    height: 50px;
+    height: 70px;
     background-color:white;
     display:flex;
     flex-wrap:wrap;
@@ -35,7 +35,7 @@
 
 .contactBar{
     background-color:black;
-    height:3%;
+    height:25px;
     position: absolute;
     width:100%;
     flex-basis:100%;
@@ -43,6 +43,17 @@
     display:flex;
     flex-direction:row;
     justify-content: space-between;
+    align-items: center;
+}
+
+.social {
+    display:flex;
+    flex-direction:row;
+    align-items:center;
+}
+
+.social div{
+    padding:0 0 0 0;
 }
 
 @media screen and (min-width: 600px) {
