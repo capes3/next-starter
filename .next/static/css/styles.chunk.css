@@ -226,8 +226,7 @@ button:focus {outline:0;}
     flex-wrap: wrap;
 }
 .image___tZI0z{
-    width: 30%;
-    height: 0%;
+    
     display:none;
 }
 
@@ -266,7 +265,25 @@ p {
 }
 
 @media screen and (min-width: 900px) {
- 
+
+.home___34OCf {
+    display:flex;
+    justify-content: space-between;
+}
+
+p {
+    max-width:550px;
+}
+
+.image___tZI0z {
+     display: block;
+     height:245px;
+     width:400px;    
+     align-self: flex-end; 
+     margin-top:-5px;
+ }
+
+
 }
 
 @media screen and (min-width: 1200px) {

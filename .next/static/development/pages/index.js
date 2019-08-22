@@ -1153,24 +1153,30 @@ function (_React$Component) {
           lineNumber: 15
         },
         __self: this
-      }, react__WEBPACK_IMPORTED_MODULE_5___default.a.createElement("h1", {
+      }, react__WEBPACK_IMPORTED_MODULE_5___default.a.createElement("div", {
         __source: {
           fileName: _jsxFileName,
           lineNumber: 16
         },
         __self: this
-      }, this.props.data.data[this.props.id].title), react__WEBPACK_IMPORTED_MODULE_5___default.a.createElement("p", {
+      }, react__WEBPACK_IMPORTED_MODULE_5___default.a.createElement("h1", {
         __source: {
           fileName: _jsxFileName,
           lineNumber: 17
         },
         __self: this
-      }, this.props.data.data[this.props.id].content), react__WEBPACK_IMPORTED_MODULE_5___default.a.createElement("img", {
+      }, this.props.data.data[this.props.id].title), react__WEBPACK_IMPORTED_MODULE_5___default.a.createElement("p", {
+        __source: {
+          fileName: _jsxFileName,
+          lineNumber: 18
+        },
+        __self: this
+      }, this.props.data.data[this.props.id].content)), react__WEBPACK_IMPORTED_MODULE_5___default.a.createElement("img", {
         className: _components_paragraphimageright_css__WEBPACK_IMPORTED_MODULE_6___default.a.image,
         src: this.props.data.data[0].image,
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 18
+          lineNumber: 20
         },
         __self: this
       }));

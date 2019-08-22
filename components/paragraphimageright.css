@@ -4,8 +4,7 @@
     flex-wrap: wrap;
 }
 .image{
-    width: 30%;
-    height: 0%;
+    
     display:none;
 }
 
@@ -44,7 +43,25 @@ p {
 }
 
 @media screen and (min-width: 900px) {
- 
+
+.home {
+    display:flex;
+    justify-content: space-between;
+}
+
+p {
+    max-width:550px;
+}
+
+.image {
+     display: block;
+     height:245px;
+     width:400px;    
+     align-self: flex-end; 
+     margin-top:-5px;
+ }
+
+
 }
 
 @media screen and (min-width: 1200px) {
