@@ -1,4 +1,168 @@
-((window["webpackJsonp"] = window["webpackJsonp"] || []).push([["static\\development\\pages\\contact.js"],{
+((window["webpackJsonp"] = window["webpackJsonp"] || []).push([["static\\development\\pages\\projects.js"],{
+
+/***/ "./components/AlternatingImg.js":
+/*!**************************************!*\
+  !*** ./components/AlternatingImg.js ***!
+  \**************************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony import */ var _babel_runtime_corejs2_helpers_esm_classCallCheck__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! @babel/runtime-corejs2/helpers/esm/classCallCheck */ "./node_modules/@babel/runtime-corejs2/helpers/esm/classCallCheck.js");
+/* harmony import */ var _babel_runtime_corejs2_helpers_esm_createClass__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! @babel/runtime-corejs2/helpers/esm/createClass */ "./node_modules/@babel/runtime-corejs2/helpers/esm/createClass.js");
+/* harmony import */ var _babel_runtime_corejs2_helpers_esm_possibleConstructorReturn__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! @babel/runtime-corejs2/helpers/esm/possibleConstructorReturn */ "./node_modules/@babel/runtime-corejs2/helpers/esm/possibleConstructorReturn.js");
+/* harmony import */ var _babel_runtime_corejs2_helpers_esm_getPrototypeOf__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! @babel/runtime-corejs2/helpers/esm/getPrototypeOf */ "./node_modules/@babel/runtime-corejs2/helpers/esm/getPrototypeOf.js");
+/* harmony import */ var _babel_runtime_corejs2_helpers_esm_inherits__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! @babel/runtime-corejs2/helpers/esm/inherits */ "./node_modules/@babel/runtime-corejs2/helpers/esm/inherits.js");
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! react */ "./node_modules/react/index.js");
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_5___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_5__);
+/* harmony import */ var _components_alternatingImg_css__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! ../components/alternatingImg.css */ "./components/alternatingImg.css");
+/* harmony import */ var _components_alternatingImg_css__WEBPACK_IMPORTED_MODULE_6___default = /*#__PURE__*/__webpack_require__.n(_components_alternatingImg_css__WEBPACK_IMPORTED_MODULE_6__);
+
+
+
+
+
+var _jsxFileName = "C:\\Users\\capen\\Desktop\\WorkProjects\\next-js-starter\\components\\AlternatingImg.js";
+
+ //probably map the data into a child component, then use that child component to determine
+//which side of the page the image is rendered on.  On smaller screens just remove 
+//the image from the flow altogether.  
+
+var AlternatingImg =
+/*#__PURE__*/
+function (_React$Component) {
+  Object(_babel_runtime_corejs2_helpers_esm_inherits__WEBPACK_IMPORTED_MODULE_4__["default"])(AlternatingImg, _React$Component);
+
+  function AlternatingImg(props) {
+    var _this;
+
+    Object(_babel_runtime_corejs2_helpers_esm_classCallCheck__WEBPACK_IMPORTED_MODULE_0__["default"])(this, AlternatingImg);
+
+    _this = Object(_babel_runtime_corejs2_helpers_esm_possibleConstructorReturn__WEBPACK_IMPORTED_MODULE_2__["default"])(this, Object(_babel_runtime_corejs2_helpers_esm_getPrototypeOf__WEBPACK_IMPORTED_MODULE_3__["default"])(AlternatingImg).call(this, props));
+    _this.state = {
+      selected: 0
+    };
+    return _this;
+  }
+
+  Object(_babel_runtime_corejs2_helpers_esm_createClass__WEBPACK_IMPORTED_MODULE_1__["default"])(AlternatingImg, [{
+    key: "render",
+    value: function render() {
+      var titleArray = this.props.data.title;
+      return react__WEBPACK_IMPORTED_MODULE_5___default.a.createElement("div", {
+        className: _components_alternatingImg_css__WEBPACK_IMPORTED_MODULE_6___default.a.wrapper,
+        __source: {
+          fileName: _jsxFileName,
+          lineNumber: 16
+        },
+        __self: this
+      }, titleArray.map(function (object, i) {
+        return react__WEBPACK_IMPORTED_MODULE_5___default.a.createElement("div", {
+          className: _components_alternatingImg_css__WEBPACK_IMPORTED_MODULE_6___default.a.alternateItems,
+          __source: {
+            fileName: _jsxFileName,
+            lineNumber: 18
+          },
+          __self: this
+        }, react__WEBPACK_IMPORTED_MODULE_5___default.a.createElement(AlternatingItem, {
+          title: object,
+          index: i,
+          __source: {
+            fileName: _jsxFileName,
+            lineNumber: 19
+          },
+          __self: this
+        }));
+      }));
+    }
+  }]);
+
+  return AlternatingImg;
+}(react__WEBPACK_IMPORTED_MODULE_5___default.a.Component);
+
+var AlternatingItem =
+/*#__PURE__*/
+function (_React$Component2) {
+  Object(_babel_runtime_corejs2_helpers_esm_inherits__WEBPACK_IMPORTED_MODULE_4__["default"])(AlternatingItem, _React$Component2);
+
+  function AlternatingItem() {
+    Object(_babel_runtime_corejs2_helpers_esm_classCallCheck__WEBPACK_IMPORTED_MODULE_0__["default"])(this, AlternatingItem);
+
+    return Object(_babel_runtime_corejs2_helpers_esm_possibleConstructorReturn__WEBPACK_IMPORTED_MODULE_2__["default"])(this, Object(_babel_runtime_corejs2_helpers_esm_getPrototypeOf__WEBPACK_IMPORTED_MODULE_3__["default"])(AlternatingItem).apply(this, arguments));
+  }
+
+  Object(_babel_runtime_corejs2_helpers_esm_createClass__WEBPACK_IMPORTED_MODULE_1__["default"])(AlternatingItem, [{
+    key: "render",
+    //tomorrow pick up here. You just need to access props and render respective elements
+    //depending on whether the key is odd or even.  
+    value: function render() {
+      if (this.props.index % 2 === 0) {
+        return react__WEBPACK_IMPORTED_MODULE_5___default.a.createElement("div", {
+          className: _components_alternatingImg_css__WEBPACK_IMPORTED_MODULE_6___default.a.odds,
+          __source: {
+            fileName: _jsxFileName,
+            lineNumber: 33
+          },
+          __self: this
+        }, react__WEBPACK_IMPORTED_MODULE_5___default.a.createElement("div", {
+          __source: {
+            fileName: _jsxFileName,
+            lineNumber: 34
+          },
+          __self: this
+        }, this.props.title.title), react__WEBPACK_IMPORTED_MODULE_5___default.a.createElement("img", {
+          src: this.props.title.image,
+          __source: {
+            fileName: _jsxFileName,
+            lineNumber: 35
+          },
+          __self: this
+        }), react__WEBPACK_IMPORTED_MODULE_5___default.a.createElement("p", {
+          __source: {
+            fileName: _jsxFileName,
+            lineNumber: 36
+          },
+          __self: this
+        }, this.props.title.content));
+      } else {
+        return react__WEBPACK_IMPORTED_MODULE_5___default.a.createElement("div", {
+          className: _components_alternatingImg_css__WEBPACK_IMPORTED_MODULE_6___default.a.evens,
+          __source: {
+            fileName: _jsxFileName,
+            lineNumber: 39
+          },
+          __self: this
+        }, react__WEBPACK_IMPORTED_MODULE_5___default.a.createElement("div", {
+          __source: {
+            fileName: _jsxFileName,
+            lineNumber: 40
+          },
+          __self: this
+        }, this.props.title.title), react__WEBPACK_IMPORTED_MODULE_5___default.a.createElement("img", {
+          src: this.props.title.image,
+          __source: {
+            fileName: _jsxFileName,
+            lineNumber: 41
+          },
+          __self: this
+        }), react__WEBPACK_IMPORTED_MODULE_5___default.a.createElement("p", {
+          __source: {
+            fileName: _jsxFileName,
+            lineNumber: 42
+          },
+          __self: this
+        }, this.props.title.content));
+      }
+    }
+  }]);
+
+  return AlternatingItem;
+}(react__WEBPACK_IMPORTED_MODULE_5___default.a.Component);
+
+/* harmony default export */ __webpack_exports__["default"] = (AlternatingImg);
+
+/***/ }),
 
 /***/ "./components/Banner.js":
 /*!******************************!*\
@@ -345,16 +509,30 @@ function (_React$Component) {
         },
         __self: this
       }, react__WEBPACK_IMPORTED_MODULE_5___default.a.createElement("div", {
-        className: _footer_css__WEBPACK_IMPORTED_MODULE_6___default.a.contacts,
+        __source: {
+          fileName: _jsxFileName,
+          lineNumber: 7
+        },
+        __self: this
+      }, react__WEBPACK_IMPORTED_MODULE_5___default.a.createElement("img", {
+        className: _footer_css__WEBPACK_IMPORTED_MODULE_6___default.a.logo,
+        src: "../static/RuppsLogo-NoBackground-Gray.png",
         __source: {
           fileName: _jsxFileName,
           lineNumber: 8
         },
         __self: this
+      })), react__WEBPACK_IMPORTED_MODULE_5___default.a.createElement("div", {
+        className: _footer_css__WEBPACK_IMPORTED_MODULE_6___default.a.contacts,
+        __source: {
+          fileName: _jsxFileName,
+          lineNumber: 10
+        },
+        __self: this
       }, react__WEBPACK_IMPORTED_MODULE_5___default.a.createElement("div", {
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 9
+          lineNumber: 12
         },
         __self: this
       }, react__WEBPACK_IMPORTED_MODULE_5___default.a.createElement("img", {
@@ -362,13 +540,13 @@ function (_React$Component) {
         src: "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAB4AAAAeCAYAAAA7MK6iAAACJ0lEQVRIS81Wu3EbQQwFhhccI0sVmKpAYsIZbCKrA7kCSRVYrsB2BWYHtiqQXIGtZDHD5KgKxBLkjAE58MBzN3NcYj+6hNrkgsXiYR/w3h7CgRYeCBdeDczME0Q8FZEzLRoRlyLyRESr11yiGJiZrwHgCwBMLAARWSLinIjuSgrIAusNReQeEf/fMLfaAj7mGEgCLxaLs81m8xsRj3KA/X0Reamq6mI2my1j56LATdMcrdfrJkZtQSGruq6n0+n0xYqNAjPzTwC4igA8AsCfdu8DAJxH4u6ISGdjb5nA2lcAeDbin0aj0XVIYduSB0R8b5w5sfodA/7aTnA/z9+6ricx6tpitafvgn5/ds7Nw4JiwEpjSN8NESn90eW9v0XE70HAIxFpO3ZWDFgHYqdyADAp62ezWqQT7pw7LgWWMJCIsprXM8xcdNZM5r1fGYMy6MYAoHa6Zz5vq8fe+zkifgrdaDwen6SmWkQaw+W+EZGqJD9cqsvtdquutbPUh6uqugl1zMw6tT8iLleu43ZIVJOnEe2o3PrOtSeX9pwpJd2LTqr3/hIR71O6Ldi7IKKuwDzVXQQzW0ZSgAcgIr+cc5ex4KQ2YzZYgJy01yTVXfKBlEcp7vKWupH1aJgXFxHzUSiSk5Ux8z53R6Lv72DgVmKpn4Ni0KIeh5Uy8x7tpfT2cxX12ADX35nucb/NvdNW6wYBayK1Vf2m/iRTshsMXKDlZMjBgP8Bd3bwH32bmRUAAAAASUVORK5CYII=",
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 10
+          lineNumber: 13
         },
         __self: this
       }), "Tremonton | UT"), react__WEBPACK_IMPORTED_MODULE_5___default.a.createElement("div", {
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 13
+          lineNumber: 16
         },
         __self: this
       }, react__WEBPACK_IMPORTED_MODULE_5___default.a.createElement("img", {
@@ -376,13 +554,13 @@ function (_React$Component) {
         src: "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAB4AAAAeCAYAAAA7MK6iAAABmElEQVRIS+2WwXHCMBBF/97kU+ggdBBzhAukg3SAOyCpIOkg6SCkg6QDTt4ZX0wqICWEE3AAZXbGzHhkyZI8znBBR3v9n/Zr/W3ChRZdiIsruJPzzDwEMNVap0SUViIzAEul1NNoNPo1hTtbXZbl4HA4zE+nU1aDNTautV4nSXJvwqPBAtzv9wut9SMRDQIt+hiPx1m9NgrMzGLfOwCxNnR9K6VmnTtmZtmxQGOWFSoCQR3neS62vsYQATihQeCWTrcAPgHIFN8Zm2qFesFFUaTH47E0O9VafyVJksm5VcO2qsG9UC84z/MfIro1wI0JrcFhGyTbETnPmJlfADzXH5JOJ5PJg01I4HLdFhbBYBHZ7XYb4z3dKqWGocK+QbR27JjihsU+8bb7VjAzr81JdUVfV3gDXAX+xibYJ7wB9oVFX3Ab+I2IFi0WBr2nviOwWS1hMHU82AvUGiDM7AL3BnWB5W/hJjZ7fdaa921WLwHMa4W9dnrWbYCN0P8XqPMjUUXm8vwFirUxpD7oRyBEKLbmCo51rHP9H1Hgwx/ZxDrHAAAAAElFTkSuQmCC",
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 14
+          lineNumber: 17
         },
         __self: this
       }), "(123)-456-7890"), react__WEBPACK_IMPORTED_MODULE_5___default.a.createElement("div", {
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 17
+          lineNumber: 20
         },
         __self: this
       }, react__WEBPACK_IMPORTED_MODULE_5___default.a.createElement("img", {
@@ -390,32 +568,33 @@ function (_React$Component) {
         src: "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAB4AAAAeCAYAAAA7MK6iAAABK0lEQVRIS+2WQbKCMAyGkyn38N1A3TCTnUfhnUQ8id7EZWbYqDfw3YNO3pQBRK01WBQXsANCvvx/2lCEkS4ciQsT+GPOX1nNzBkArAHgZ+AKzgCwIaJdk7cFM/MKAPYDA6/SGWOWaZoe3cMuOK/VvpPtVDuOH+wqs9Y6W+aRVZyMMZm19lDnCYOJqHKCmWNcaCHMLL3ALrgoikVP9ZXKppe1AB1YRI5JkvzefKxR36psii7LcouIC5XiTl9zIto09wH1PpW+QsM97i4ohfpnKrvp9OCQeveuZzteAoNP/YNePtqFr4F96ntuuWhwpb6aQJcVq5k18WANxRMzgaPnstb577J6nINA/RfJRCRHxJnWO02ciPwhopv790cfTYIhY6Zz9ZBuBnONZvU/iWDZH7HnugYAAAAASUVORK5CYII=",
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 18
+          lineNumber: 21
         },
         __self: this
       }), "email@gmail.com"), react__WEBPACK_IMPORTED_MODULE_5___default.a.createElement("div", {
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 21
+          lineNumber: 24
         },
         __self: this
       }, react__WEBPACK_IMPORTED_MODULE_5___default.a.createElement("img", {
         src: "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAB4AAAAeCAYAAAA7MK6iAAABPElEQVRIS+2XzU3DQBCF38gXH9MBpAP7YmlOJBWkBOgAOiAd0AIl0AHk4pF8Siog6SAUYA0a5LXWUQyKsptf9rQXz6f35mfHhCMdOhIXpwMWkVtVvQnpBBGtmHnpx+woNiiAz5BQL9bQh2+CRwDeI4HHzPzhYp89+EtVp0Q0d4pUNSOiF8+94IoXaZqO8jxf+ykSkc20BQd3Ajp4dDAzt3VSVVVW1/UjAGvJARFlsayeMbNZ+nPKsnwjoklPVwS1ugMWEWuXu4sDLwA8maokSdZFUbQt1OR40Ch+AHAfMscde/umnIhMATwfHLyl0PYuLntlXhsl9uq4O0TE7HUvm93t0XFnb7Dv7nVU9b/idmRe7OSKkuNdl71d2ql/2TMpzabpN37v7vfHrPa/W/663kbaLreGPZ0/iUOp/gbQTfMfyZUFMgAAAABJRU5ErkJggg==",
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 22
+          lineNumber: 25
         },
         __self: this
       }), "Follow Us")), react__WEBPACK_IMPORTED_MODULE_5___default.a.createElement("div", {
+        className: _footer_css__WEBPACK_IMPORTED_MODULE_6___default.a.copyright,
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 28
+          lineNumber: 31
         },
         __self: this
       }, react__WEBPACK_IMPORTED_MODULE_5___default.a.createElement("div", {
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 29
+          lineNumber: 32
         },
         __self: this
       }, "\xA9 ALL RIGHTS RESERVED")));
@@ -1094,6 +1273,17 @@ function (_React$Component) {
 
 /***/ }),
 
+/***/ "./data/alternating.json":
+/*!*******************************!*\
+  !*** ./data/alternating.json ***!
+  \*******************************/
+/*! exports provided: title, default */
+/***/ (function(module) {
+
+module.exports = {"title":[{"title":"Title1","content":"Content for the 0 index","image":"https://picsum.photos/id/10/200"},{"title":"Title2","content":"Content for the 1 index","image":"https://picsum.photos/id/10/200"},{"title":"Title3","content":"Content for the 2 index","image":"https://picsum.photos/id/10/200"},{"title":"Title4","content":"Content for the 3 index","image":"https://picsum.photos/id/10/200"}]};
+
+/***/ }),
+
 /***/ "./data/horizontaltab.json":
 /*!*********************************!*\
   !*** ./data/horizontaltab.json ***!
@@ -1113,17 +1303,6 @@ module.exports = {"title":[{"title":"Title1","content":"Content for the 0 index"
 /***/ (function(module) {
 
 module.exports = {"data":[{"id":1,"name":"Home","href":"/"},{"id":2,"name":"About","href":"/about"},{"id":3,"name":"Contact","href":"/contact"},{"id":4,"name":"Services","href":"/services"},{"id":5,"name":"Projects","href":"/projects"}]};
-
-/***/ }),
-
-/***/ "./data/paragraphimageright.json":
-/*!***************************************!*\
-  !*** ./data/paragraphimageright.json ***!
-  \***************************************/
-/*! exports provided: data, default */
-/***/ (function(module) {
-
-module.exports = {"data":[{"id":0,"title":"Title for the first","content":"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.","image":"https://picsum.photos/id/785/1600/400?blur=2"},{"id":1,"title":"Title for the second","content":"1Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.","image":"https://picsum.photos/id/785/1600/400?blur=2"}]};
 
 /***/ }),
 
@@ -7450,21 +7629,21 @@ module.exports = __webpack_require__(/*! ./dist/lib/head */ "./node_modules/next
 
 /***/ }),
 
-/***/ "./node_modules/next/dist/build/webpack/loaders/next-client-pages-loader.js?page=%2Fcontact&absolutePagePath=C%3A%5CUsers%5Ccapen%5CDesktop%5CWorkProjects%5Cnext-js-starter%5Cpages%5Ccontact.js!./":
-/*!********************************************************************************************************************************************************************************************************!*\
-  !*** ./node_modules/next/dist/build/webpack/loaders/next-client-pages-loader.js?page=%2Fcontact&absolutePagePath=C%3A%5CUsers%5Ccapen%5CDesktop%5CWorkProjects%5Cnext-js-starter%5Cpages%5Ccontact.js ***!
-  \********************************************************************************************************************************************************************************************************/
+/***/ "./node_modules/next/dist/build/webpack/loaders/next-client-pages-loader.js?page=%2Fprojects&absolutePagePath=C%3A%5CUsers%5Ccapen%5CDesktop%5CWorkProjects%5Cnext-js-starter%5Cpages%5Cprojects.js!./":
+/*!**********************************************************************************************************************************************************************************************************!*\
+  !*** ./node_modules/next/dist/build/webpack/loaders/next-client-pages-loader.js?page=%2Fprojects&absolutePagePath=C%3A%5CUsers%5Ccapen%5CDesktop%5CWorkProjects%5Cnext-js-starter%5Cpages%5Cprojects.js ***!
+  \**********************************************************************************************************************************************************************************************************/
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
 
-    (window.__NEXT_P=window.__NEXT_P||[]).push(["/contact", function() {
-      var page = __webpack_require__(/*! ./pages/contact.js */ "./pages/contact.js")
+    (window.__NEXT_P=window.__NEXT_P||[]).push(["/projects", function() {
+      var page = __webpack_require__(/*! ./pages/projects.js */ "./pages/projects.js")
       if(true) {
-        module.hot.accept(/*! ./pages/contact.js */ "./pages/contact.js", function() {
-          if(!next.router.components["/contact"]) return
-          var updatedPage = __webpack_require__(/*! ./pages/contact.js */ "./pages/contact.js")
-          next.router.update("/contact", updatedPage.default || updatedPage)
+        module.hot.accept(/*! ./pages/projects.js */ "./pages/projects.js", function() {
+          if(!next.router.components["/projects"]) return
+          var updatedPage = __webpack_require__(/*! ./pages/projects.js */ "./pages/projects.js")
+          next.router.update("/projects", updatedPage.default || updatedPage)
         })
       }
       return { page: page.default || page }
@@ -11694,10 +11873,10 @@ module.exports = function(module) {
 
 /***/ }),
 
-/***/ "./pages/contact.js":
-/*!**************************!*\
-  !*** ./pages/contact.js ***!
-  \**************************/
+/***/ "./pages/projects.js":
+/*!***************************!*\
+  !*** ./pages/projects.js ***!
+  \***************************/
 /*! exports provided: default */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
@@ -11712,12 +11891,13 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _components_Banner__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ../components/Banner */ "./components/Banner.js");
 /* harmony import */ var _components_ParagraphImageRight__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! ../components/ParagraphImageRight */ "./components/ParagraphImageRight.js");
 /* harmony import */ var _components_HorizontalTab__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! ../components/HorizontalTab */ "./components/HorizontalTab.js");
-/* harmony import */ var _data_paragraphimageright_json__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(/*! ../data/paragraphimageright.json */ "./data/paragraphimageright.json");
-var _data_paragraphimageright_json__WEBPACK_IMPORTED_MODULE_7___namespace = /*#__PURE__*/__webpack_require__.t(/*! ../data/paragraphimageright.json */ "./data/paragraphimageright.json", 1);
-/* harmony import */ var _data_horizontaltab_json__WEBPACK_IMPORTED_MODULE_8__ = __webpack_require__(/*! ../data/horizontaltab.json */ "./data/horizontaltab.json");
-var _data_horizontaltab_json__WEBPACK_IMPORTED_MODULE_8___namespace = /*#__PURE__*/__webpack_require__.t(/*! ../data/horizontaltab.json */ "./data/horizontaltab.json", 1);
-/* harmony import */ var _components_ContactFormMap__WEBPACK_IMPORTED_MODULE_9__ = __webpack_require__(/*! ../components/ContactFormMap */ "./components/ContactFormMap.js");
-var _jsxFileName = "C:\\Users\\capen\\Desktop\\WorkProjects\\next-js-starter\\pages\\contact.js";
+/* harmony import */ var _components_AlternatingImg__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(/*! ../components/AlternatingImg */ "./components/AlternatingImg.js");
+/* harmony import */ var _data_alternating_json__WEBPACK_IMPORTED_MODULE_8__ = __webpack_require__(/*! ../data/alternating.json */ "./data/alternating.json");
+var _data_alternating_json__WEBPACK_IMPORTED_MODULE_8___namespace = /*#__PURE__*/__webpack_require__.t(/*! ../data/alternating.json */ "./data/alternating.json", 1);
+/* harmony import */ var _data_horizontaltab_json__WEBPACK_IMPORTED_MODULE_9__ = __webpack_require__(/*! ../data/horizontaltab.json */ "./data/horizontaltab.json");
+var _data_horizontaltab_json__WEBPACK_IMPORTED_MODULE_9___namespace = /*#__PURE__*/__webpack_require__.t(/*! ../data/horizontaltab.json */ "./data/horizontaltab.json", 1);
+/* harmony import */ var _components_ContactFormMap__WEBPACK_IMPORTED_MODULE_10__ = __webpack_require__(/*! ../components/ContactFormMap */ "./components/ContactFormMap.js");
+var _jsxFileName = "C:\\Users\\capen\\Desktop\\WorkProjects\\next-js-starter\\pages\\projects.js";
 
 
 
@@ -11729,23 +11909,24 @@ var _jsxFileName = "C:\\Users\\capen\\Desktop\\WorkProjects\\next-js-starter\\pa
 
 
 
-var Contact = function Contact() {
+
+var Projects = function Projects() {
   return react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 13
-    },
-    __self: this
-  }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(next_server_head__WEBPACK_IMPORTED_MODULE_3___default.a, {
     __source: {
       fileName: _jsxFileName,
       lineNumber: 14
     },
     __self: this
-  }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("style", {
+  }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(next_server_head__WEBPACK_IMPORTED_MODULE_3___default.a, {
     __source: {
       fileName: _jsxFileName,
       lineNumber: 15
+    },
+    __self: this
+  }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("style", {
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 16
     },
     __self: this
   }, "\n                body {\n                margin: 0;\n                }"), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("link", {
@@ -11753,7 +11934,7 @@ var Contact = function Contact() {
     rel: "stylesheet",
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 21
+      lineNumber: 22
     },
     __self: this
   }), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("meta", {
@@ -11761,56 +11942,65 @@ var Contact = function Contact() {
     content: "width=device-width, initial-scale=1",
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 22
+      lineNumber: 23
+    },
+    __self: this
+  }), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("link", {
+    rel: "stylesheet",
+    href: "/static/base.css",
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 24
     },
     __self: this
   }), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("script", {
     src: "https://unpkg.com/boxicons@latest/dist/boxicons.js",
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 23
+      lineNumber: 25
     },
     __self: this
   })), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_components_Header__WEBPACK_IMPORTED_MODULE_1__["default"], {
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 25
-    },
-    __self: this
-  }), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_components_Banner__WEBPACK_IMPORTED_MODULE_4__["default"], {
-    text: "Contact Us",
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 26
-    },
-    __self: this
-  }), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_components_ContactFormMap__WEBPACK_IMPORTED_MODULE_9__["default"], {
-    __source: {
-      fileName: _jsxFileName,
       lineNumber: 27
     },
     __self: this
-  }), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_components_Footer__WEBPACK_IMPORTED_MODULE_2__["default"], {
+  }), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_components_Banner__WEBPACK_IMPORTED_MODULE_4__["default"], {
+    text: "Completed Projects",
     __source: {
       fileName: _jsxFileName,
       lineNumber: 28
     },
     __self: this
+  }), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_components_AlternatingImg__WEBPACK_IMPORTED_MODULE_7__["default"], {
+    data: _data_alternating_json__WEBPACK_IMPORTED_MODULE_8__,
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 29
+    },
+    __self: this
+  }), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_components_Footer__WEBPACK_IMPORTED_MODULE_2__["default"], {
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 30
+    },
+    __self: this
   }));
 };
 
-/* harmony default export */ __webpack_exports__["default"] = (Contact);
+/* harmony default export */ __webpack_exports__["default"] = (Projects);
 
 /***/ }),
 
-/***/ 15:
-/*!************************************************************************************************************************************************************!*\
-  !*** multi next-client-pages-loader?page=%2Fcontact&absolutePagePath=C%3A%5CUsers%5Ccapen%5CDesktop%5CWorkProjects%5Cnext-js-starter%5Cpages%5Ccontact.js ***!
-  \************************************************************************************************************************************************************/
+/***/ 16:
+/*!**************************************************************************************************************************************************************!*\
+  !*** multi next-client-pages-loader?page=%2Fprojects&absolutePagePath=C%3A%5CUsers%5Ccapen%5CDesktop%5CWorkProjects%5Cnext-js-starter%5Cpages%5Cprojects.js ***!
+  \**************************************************************************************************************************************************************/
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
-module.exports = __webpack_require__(/*! next-client-pages-loader?page=%2Fcontact&absolutePagePath=C%3A%5CUsers%5Ccapen%5CDesktop%5CWorkProjects%5Cnext-js-starter%5Cpages%5Ccontact.js! */"./node_modules/next/dist/build/webpack/loaders/next-client-pages-loader.js?page=%2Fcontact&absolutePagePath=C%3A%5CUsers%5Ccapen%5CDesktop%5CWorkProjects%5Cnext-js-starter%5Cpages%5Ccontact.js!./");
+module.exports = __webpack_require__(/*! next-client-pages-loader?page=%2Fprojects&absolutePagePath=C%3A%5CUsers%5Ccapen%5CDesktop%5CWorkProjects%5Cnext-js-starter%5Cpages%5Cprojects.js! */"./node_modules/next/dist/build/webpack/loaders/next-client-pages-loader.js?page=%2Fprojects&absolutePagePath=C%3A%5CUsers%5Ccapen%5CDesktop%5CWorkProjects%5Cnext-js-starter%5Cpages%5Cprojects.js!./");
 
 
 /***/ }),
@@ -11826,5 +12016,5 @@ module.exports = dll_bed7e68b081ee2342acd;
 
 /***/ })
 
-},[[15,"static/runtime/webpack.js","styles"]]]));;
-//# sourceMappingURL=contact.js.map
+},[[16,"static/runtime/webpack.js","styles"]]]));;
+//# sourceMappingURL=projects.js.map

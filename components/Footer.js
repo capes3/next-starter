@@ -4,8 +4,11 @@ import css from './footer.css'
 class Footer extends React.Component {
     render () {
       return <div className={css.footer}>
-        
+          <div>
+            <img className={css.logo} src={"../static/RuppsLogo-NoBackground-Gray.png"}/>
+          </div>
         <div className={css.contacts}>
+
           <div>
           <img className={css.pin}src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAB4AAAAeCAYAAAA7MK6iAAACJ0lEQVRIS81Wu3EbQQwFhhccI0sVmKpAYsIZbCKrA7kCSRVYrsB2BWYHtiqQXIGtZDHD5KgKxBLkjAE58MBzN3NcYj+6hNrkgsXiYR/w3h7CgRYeCBdeDczME0Q8FZEzLRoRlyLyRESr11yiGJiZrwHgCwBMLAARWSLinIjuSgrIAusNReQeEf/fMLfaAj7mGEgCLxaLs81m8xsRj3KA/X0Reamq6mI2my1j56LATdMcrdfrJkZtQSGruq6n0+n0xYqNAjPzTwC4igA8AsCfdu8DAJxH4u6ISGdjb5nA2lcAeDbin0aj0XVIYduSB0R8b5w5sfodA/7aTnA/z9+6ricx6tpitafvgn5/ds7Nw4JiwEpjSN8NESn90eW9v0XE70HAIxFpO3ZWDFgHYqdyADAp62ezWqQT7pw7LgWWMJCIsprXM8xcdNZM5r1fGYMy6MYAoHa6Zz5vq8fe+zkifgrdaDwen6SmWkQaw+W+EZGqJD9cqsvtdquutbPUh6uqugl1zMw6tT8iLleu43ZIVJOnEe2o3PrOtSeX9pwpJd2LTqr3/hIR71O6Ldi7IKKuwDzVXQQzW0ZSgAcgIr+cc5ex4KQ2YzZYgJy01yTVXfKBlEcp7vKWupH1aJgXFxHzUSiSk5Ux8z53R6Lv72DgVmKpn4Ni0KIeh5Uy8x7tpfT2cxX12ADX35nucb/NvdNW6wYBayK1Vf2m/iRTshsMXKDlZMjBgP8Bd3bwH32bmRUAAAAASUVORK5CYII="/>
           Tremonton | UT
@@ -25,8 +28,8 @@ class Footer extends React.Component {
         </div>
 
         
-        <div>
-          <div>
+        <div className={css.copyright}>
+          <div >
           &#169; ALL RIGHTS RESERVED
           </div>
         </div>

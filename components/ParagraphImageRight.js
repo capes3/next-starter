@@ -23,4 +23,6 @@ constructor(props){
     }
 }
 
+
+
 export default ParagraphImageRight
