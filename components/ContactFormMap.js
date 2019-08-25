@@ -40,6 +40,7 @@ class ContactForm extends React.Component {
 
   render () {
     return <div className={css.contactFormWrapper}>
+        <img src={"../static/NorthernUtahGray.png"} className={css.map}></img>
         <div className={css.contactForm}>
         <div className={css.title}>Contact Us</div>
         <form>
