@@ -61,6 +61,23 @@ p {
      margin-top:-5px;
  }
 
+ .firstParagraph {
+     display: flex;
+     flex-direction: row;
+ }
+
+ .secondParagraph {
+     display:flex;
+     flex-direction: row;
+ }
+
+ .secondParagraph image {
+     order: 1;
+ }
+
+ .secondParagraph div {
+     order: 2;
+ }
 
 }
 

@@ -365,6 +365,23 @@ p {
      margin-top:-5px;
  }
 
+ .firstParagraph___3xpkS {
+     display: flex;
+     flex-direction: row;
+ }
+
+ .secondParagraph___1vHqp {
+     display:flex;
+     flex-direction: row;
+ }
+
+ .secondParagraph___1vHqp image {
+     order: 1;
+ }
+
+ .secondParagraph___1vHqp div {
+     order: 2;
+ }
 
 }
 
