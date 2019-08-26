@@ -64,11 +64,13 @@ p {
  .firstParagraph {
      display: flex;
      flex-direction: row;
+     justify-content: space-between;
  }
 
  .secondParagraph {
      display:flex;
      flex-direction: row;
+     justify-content: space-between;
  }
 
  .secondParagraph image {
@@ -77,6 +79,12 @@ p {
 
  .secondParagraph div {
      order: 2;
+     
+ }
+
+ .secondParagraph h1 {
+     text-align: right;
+     margin-right: 40px;
  }
 
 }

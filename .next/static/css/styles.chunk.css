@@ -368,11 +368,13 @@ p {
  .firstParagraph___3xpkS {
      display: flex;
      flex-direction: row;
+     justify-content: space-between;
  }
 
  .secondParagraph___1vHqp {
      display:flex;
      flex-direction: row;
+     justify-content: space-between;
  }
 
  .secondParagraph___1vHqp image {
@@ -381,6 +383,12 @@ p {
 
  .secondParagraph___1vHqp div {
      order: 2;
+     
+ }
+
+ .secondParagraph___1vHqp h1 {
+     text-align: right;
+     margin-right: 40px;
  }
 
 }
