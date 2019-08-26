@@ -37,6 +37,10 @@ p {
     padding-left:10px;
 }
 
+.secondParagraph img {
+    display: none;
+}
+
 
 @media screen and (min-width: 600px) {
    
@@ -74,18 +78,9 @@ p {
  }
 
  .secondParagraph image {
-     order: 1;
+     display: none;
  }
 
- .secondParagraph div {
-     order: 2;
-     
- }
-
- .secondParagraph h1 {
-     text-align: right;
-     margin-right: 40px;
- }
 
 }
 
