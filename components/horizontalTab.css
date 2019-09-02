@@ -21,11 +21,47 @@
 }
 
 @media screen and (min-width: 600px) {
+    
+    .tabContent img {
+        height: 300px;
+    }
+
+    .tabContent div {
+        padding: 20px 0;
+    }
+
+    .tabWrapper {
+        width: 300px;
+        justify-content: center;
+    }
+
+    .tab {
+        width: 75%;
+        text-align: center;
+    }
+
+
    
 }
 
 @media screen and (min-width: 900px) {
- 
+    .wrapper {
+        flex-direction: row;
+        justify-content: space-around;
+    }
+
+    .tabWrapper{
+        flex-direction: column;
+        order:2;
+        width: 250px;
+        text-align: center;
+    }
+
+    .tab {
+        border-top: 1px solid;
+    }
+
+    
 }
 
 @media screen and (min-width: 1200px) {
