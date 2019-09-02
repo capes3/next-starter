@@ -220,7 +220,7 @@ module.exports = {"wrapper":"wrapper___2DRkw","tabWrapper":"tabWrapper___3TpVS",
           .querySelectorAll("link[href][rel=stylesheet]")
           .forEach(function(link) {
             if (!link.href.match(prefix) || link.stale) return;
-            injectCss(link, link.href.split("?")[0] + "?unix=1567456102689");
+            injectCss(link, link.href.split("?")[0] + "?unix=1567456266998");
           });
       }
     }
