@@ -30,16 +30,20 @@ class AlternatingImg extends React.Component {
 //depending on whether the key is odd or even.  
     render () {
         if(this.props.index%2 === 0){
-        return <div className={css.odds}>
-            <div>{this.props.title.title}</div>
-            <img src={this.props.title.image}/> 
+        return <div>
+            <div className={css.odds}>
+            <h2>{this.props.title.title}</h2>
             <p>{this.props.title.content}</p>
+            </div>
+            <img src={this.props.title.image}/> 
         </div>
         }else{
-            return <div className={css.evens}>
-                <div>{this.props.title.title}</div>
-                <img src={this.props.title.image}/>
+            return <div>
+                <div className={css.evens}>
+                <h2>{this.props.title.title}</h2>
                 <p>{this.props.title.content}</p>
+                </div>
+                <img src={this.props.title.image}/>
             </div>
         }
     }

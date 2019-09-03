@@ -12,9 +12,64 @@
     padding: 10px 0;
 }
 
-
 .alternateItems div {
     display: flex;
     flex-direction:column;
     align-items: center;
+}
+
+@media screen and (min-width: 600px) {
+
+    .alternateItems img {
+        width: 400px;
+    }
+   
+}
+
+@media screen and (min-width: 900px) {
+
+}
+
+@media screen and (min-width: 1200px) {
+
+    .alternateItems {
+        padding: 20px 0;
+    }
+    
+    .alternateItems div {
+        display: flex;
+        flex-direction: row;
+        width: 900px;
+        max-width: 1200px;
+        justify-content:space-between;
+        position: relative;
+    }
+
+    .alternateItems div div {
+        display: flex;
+        flex-direction: column;
+        align-items:flex-start;
+        margin-top: -180px;
+    }
+
+
+    .alternateItems div div p{
+        align-self: flex-start;
+        padding-top: 0px;
+        margin-top: 0px;
+    }
+
+
+    .odds {
+        order: 2;
+        padding-left: 40px;
+        position: absolute;
+        top:0;
+    }
+
+    
+}
+
+@media screen and (min-width: 1800px) {
+ 
 }
