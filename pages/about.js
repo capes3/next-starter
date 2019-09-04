@@ -25,7 +25,7 @@ const About = () => (
         </Head>
         <Header/>
         <Banner text={"About Us"}/>
-        <ParagraphImageRight data={data} id={0} className={css.firstParagraph}/>
+        <ParagraphImageRight data={data} id={0} className={css.home}/>
         <ParagraphImageRight data={data} id={1} className={css.secondParagraph}/>
         <Accordian data={accordianData}/>
         <Footer/>

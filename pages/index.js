@@ -9,7 +9,8 @@ import data from '../data/paragraphimageright.json'
 import Slick from '../components/Slick'
 import css from '../components/paragraphimageright.css'
 
-
+//I can just set inheritance when using the same component in different places.  
+//then in the stylesheet just use wrapper as a selector.  
 
 const Index = () => (
     <div>
