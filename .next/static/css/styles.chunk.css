@@ -408,6 +408,10 @@ p {
     align-self:center;    
 }
 
+.tabWrapper___3TpVS h3 {
+    display: none;
+}
+
 .tabContent___1dqzA{
     align-self:center;
 }
@@ -420,6 +424,7 @@ p {
 }
 
 @media screen and (min-width: 600px) {
+
     
     .tabContent___1dqzA img {
         height: 300px;
@@ -460,6 +465,10 @@ p {
         text-align: center;
         flex-grow: 1;
         margin: 0 0 50px 0;
+    }
+
+    .tabWrapper___3TpVS h3 {
+        display: inline;
     }
 
     .tabContent___1dqzA {
