@@ -447,7 +447,10 @@ p {
 @media screen and (min-width: 900px) {
     .wrapper___2DRkw {
         flex-direction: row;
-        justify-content: space-around;
+        justify-content: space-between;
+        max-width: 900px;
+        margin-left:auto;
+        margin-right:auto;
     }
 
     .tabWrapper___3TpVS{
@@ -455,10 +458,29 @@ p {
         order:2;
         width: 250px;
         text-align: center;
+        flex-grow: 1;
+        margin: 0 0 50px 0;
+    }
+
+    .tabContent___1dqzA {
+        flex-grow:2;
+        width: 600px;
+    }
+
+    .tabContent___1dqzA img {
+        width: 100%;
+    }
+    .tabContent___1dqzA div {
+        width:100%;
+        margin: 0 0 0 0;
     }
 
     .tab___UJjjn {
-        border-top: 1px solid;
+        border-top: none;
+        border-bottom: 1px solid;
+        border-right:none;
+        border-left:none;
+        margin: 0 0 0 80px;
     }
 
     
@@ -466,83 +488,6 @@ p {
 
 @media screen and (min-width: 1200px) {
  
-}
-
-@media screen and (min-width: 1800px) {
- 
-}
-
-.wrapper___4LrbD {
-    padding: 30px 0;
-
-}
-
-.alternateItems___B4WMU {
-    display:flex;
-    flex-direction: column;
-    align-items: center;
-}
-
-.alternateItems___B4WMU p {
-    padding: 10px 0;
-}
-
-.alternateItems___B4WMU div {
-    display: flex;
-    flex-direction:column;
-    align-items: center;
-}
-
-@media screen and (min-width: 600px) {
-
-    .alternateItems___B4WMU img {
-        width: 400px;
-    }
-   
-}
-
-@media screen and (min-width: 900px) {
-
-}
-
-@media screen and (min-width: 1200px) {
-
-    .alternateItems___B4WMU {
-        padding: 20px 0;
-    }
-    
-    .alternateItems___B4WMU div {
-        display: flex;
-        flex-direction: row;
-        width: 900px;
-        max-width: 1200px;
-        justify-content:space-between;
-        position: relative;
-    }
-
-    .alternateItems___B4WMU div div {
-        display: flex;
-        flex-direction: column;
-        align-items:flex-start;
-        margin-top: -180px;
-    }
-
-
-    .alternateItems___B4WMU div div p{
-        align-self: flex-start;
-        padding-top: 0px;
-        margin-top: 0px;
-    }
-
-
-    .odds___1cgKS {
-        order: 2;
-        padding-left: 40px;
-        position: absolute;
-        top:0;
-    }
-
-    
 }
 
 @media screen and (min-width: 1800px) {

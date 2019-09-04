@@ -12,6 +12,7 @@ class HorizontalTab extends React.Component {
         const titleArray = this.props.data.title
       return <div className={css.wrapper}>
         <div className={css.tabWrapper}>
+        <h3>Other Services</h3>
         {titleArray.map((object, i) => 
         <div className={css.tab} onClick={()=>{this.setState({selected:i})}}>
         {object.title}
@@ -19,6 +20,7 @@ class HorizontalTab extends React.Component {
         )}
         </div>
         <div className={css.tabContent}>
+          <h2 className={css.title}>{titleArray[this.state.selected].title}</h2>
         <img src={titleArray[this.state.selected].image}/>
         <div>
             {titleArray[this.state.selected].content}
