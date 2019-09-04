@@ -4,11 +4,6 @@ import css from '../components/paragraphimageright.css'
 
 
 class ParagraphImageRight extends React.Component{
-constructor(props){
-    super(props)
-}
-
-
 
     render(props){
         return(

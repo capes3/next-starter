@@ -5,7 +5,7 @@ import css from './horizontalTab.css'
 class HorizontalTab extends React.Component {
     constructor(props){
         super(props)
-        this.state={selected:2}
+        this.state={selected:0}
     }
 
     render () {

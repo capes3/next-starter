@@ -7,33 +7,9 @@
       "publicPath": "static/chunks/0.js"
     }
   ],
-  "../components/banner.css": [
-    {
-      "id": "./components/banner.css",
-      "name": "./components/banner.css",
-      "file": "static/chunks/styles.js",
-      "publicPath": "static/chunks/styles.js"
-    }
-  ],
-  "./contactFormMap.css": [
-    {
-      "id": "./components/contactFormMap.css",
-      "name": "./components/contactFormMap.css",
-      "file": "static/chunks/styles.js",
-      "publicPath": "static/chunks/styles.js"
-    }
-  ],
-  "./footer.css": [
-    {
-      "id": "./components/footer.css",
-      "name": "./components/footer.css",
-      "file": "static/chunks/styles.js",
-      "publicPath": "static/chunks/styles.js"
-    }
-  ],
   "undefined": [
     {
-      "id": 3,
+      "id": 4,
       "name": null,
       "file": "static/chunks/styles.js",
       "publicPath": "static/chunks/styles.js"
@@ -45,13 +21,7 @@
       "publicPath": "static/chunks/styles.js"
     },
     {
-      "id": 7,
-      "name": null,
-      "file": "static/chunks/styles.js",
-      "publicPath": "static/chunks/styles.js"
-    },
-    {
-      "id": 4,
+      "id": 6,
       "name": null,
       "file": "static/chunks/styles.js",
       "publicPath": "static/chunks/styles.js"
@@ -63,20 +33,44 @@
       "publicPath": "static/chunks/styles.js"
     },
     {
+      "id": 3,
+      "name": null,
+      "file": "static/chunks/styles.js",
+      "publicPath": "static/chunks/styles.js"
+    },
+    {
       "id": 5,
       "name": null,
       "file": "static/chunks/styles.js",
       "publicPath": "static/chunks/styles.js"
     },
     {
-      "id": 6,
+      "id": 12,
       "name": null,
       "file": "static/chunks/styles.js",
       "publicPath": "static/chunks/styles.js"
-    },
+    }
+  ],
+  "../components/accordian.css": [
     {
-      "id": 8,
-      "name": null,
+      "id": "./components/accordian.css",
+      "name": "./components/accordian.css",
+      "file": "static/chunks/styles.js",
+      "publicPath": "static/chunks/styles.js"
+    }
+  ],
+  "../components/banner.css": [
+    {
+      "id": "./components/banner.css",
+      "name": "./components/banner.css",
+      "file": "static/chunks/styles.js",
+      "publicPath": "static/chunks/styles.js"
+    }
+  ],
+  "./footer.css": [
+    {
+      "id": "./components/footer.css",
+      "name": "./components/footer.css",
       "file": "static/chunks/styles.js",
       "publicPath": "static/chunks/styles.js"
     }
@@ -93,14 +87,6 @@
     {
       "id": "./components/home-banner.css",
       "name": "./components/home-banner.css",
-      "file": "static/chunks/styles.js",
-      "publicPath": "static/chunks/styles.js"
-    }
-  ],
-  "./horizontalTab.css": [
-    {
-      "id": "./components/horizontalTab.css",
-      "name": "./components/horizontalTab.css",
       "file": "static/chunks/styles.js",
       "publicPath": "static/chunks/styles.js"
     }
