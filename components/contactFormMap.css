@@ -92,6 +92,8 @@
         height:400px;
         margin-bottom: -185px;
         z-index: 0;
+        box-shadow:10px 10px 8px 10px#888888;
+
     }
     .contactForm {
         position: relative;
@@ -100,6 +102,8 @@
         margin-right:auto;
         margin-bottom:100px;
         z-index: 1;
+        box-shadow: 10px 10px 8px #888888;
+
     }
 
 
