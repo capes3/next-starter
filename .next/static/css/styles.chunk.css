@@ -1,10 +1,10 @@
 .hamburgerContainer___xAdXq{
  padding-right:10px;
- color: darkcyan;
+ color: #075AB8;
 }
 
 .menuIcon___CXDdv{
- color: darkcyan;
+ color: #075AB8;
  height:35px;
  align-self:center;
 }
@@ -88,7 +88,7 @@
    }
 
    .linkWrapper___3hNju .contactButton___2oLtU{
-       background-color:darkcyan;
+       background-color:#075AB8;
        border-radius: 8px;
        color:white;
        padding: 5px 8px;
@@ -390,6 +390,15 @@ p {
      display: none;
  }
 
+ .secondParagraph___1vHqp div {
+     margin-left:auto;
+     margin-right:auto;
+     max-width: 800px;
+ }
+
+ .secondParagraph___1vHqp p {
+     max-width: 800px;
+ }
 
 }
 
@@ -398,6 +407,17 @@ p {
     max-width: 1100px;
 
  }
+
+ .secondParagraph___1vHqp div {
+     max-width: 1100px;
+     padding: 30px 0;
+ }
+
+ .secondParagraph___1vHqp p {
+     max-width: 950px;
+ }
+
+ 
 }
 
 @media screen and (min-width: 1800px) {
@@ -405,6 +425,56 @@ p {
 }
 
 /* On bigger screens make sure to change the image display */
+.wrapper___3yMX7{
+    display:flex;
+    flex-direction: column;
+    align-items: flex-start;
+    width:80%;
+    margin:20px 0px 25px;
+    align-self: center;
+}
+
+.title___1nf0U{
+    align-self:center;
+    padding: 10px 0px 10px;
+    color:#075AB8;
+    font-size: 2em;
+}
+
+.item___3byWd{
+    width:100%;
+}
+
+.itemWrapper___1iU0Q{
+    width:100%;
+}
+
+.itemTitle___olevx{
+    background-color:lightgray;
+    width:100%;
+    font-size:1.15em;
+    padding: 5px 0px 5px 10px;
+}
+
+
+@media screen and (min-width: 600px) {
+   
+}
+
+@media screen and (min-width: 900px) {
+    .wrapper___3yMX7 {
+        width: 600px;
+    }
+}
+
+@media screen and (min-width: 1200px) {
+ 
+}
+
+@media screen and (min-width: 1800px) {
+ 
+}
+
 .wrapper___2DRkw{
     display:flex;
     flex-direction: column;
@@ -558,7 +628,7 @@ p {
 }
 
 .contactForm___1dxJs form button{
-    background-color: darkcyan;
+    background-color: #075AB8;
     border: none;
     color: white;
     padding: 4px 0px;

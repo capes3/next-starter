@@ -14,7 +14,7 @@
 
 .carouselWrapper h1{
     align-self: center;
-    color:darkcyan;
+    color:#075AB8;
 }
 
 .carousel button {
@@ -63,11 +63,17 @@
 }
 
 @media screen and (min-width: 900px) {
- 
+ .carouselWrapper {
+     max-width: 700px;
+     margin-left:auto;
+     margin-right:auto;
+ }
 }
 
 @media screen and (min-width: 1200px) {
- 
+ .carouselWrapper {
+     max-width: 900px;
+ }
 }
 
 @media screen and (min-width: 1800px) {

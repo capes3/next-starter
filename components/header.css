@@ -1,10 +1,10 @@
 .hamburgerContainer{
  padding-right:10px;
- color: darkcyan;
+ color: #075AB8;
 }
 
 .menuIcon{
- color: darkcyan;
+ color: #075AB8;
  height:35px;
  align-self:center;
 }
@@ -88,7 +88,7 @@
    }
 
    .linkWrapper .contactButton{
-       background-color:darkcyan;
+       background-color:#075AB8;
        border-radius: 8px;
        color:white;
        padding: 5px 8px;
