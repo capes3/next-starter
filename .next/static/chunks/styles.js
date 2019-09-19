@@ -1,14 +1,14 @@
 (window["webpackJsonp"] = window["webpackJsonp"] || []).push([["styles"],{
 
-/***/ "./components/alternatingImg.css":
-/*!***************************************!*\
-  !*** ./components/alternatingImg.css ***!
-  \***************************************/
+/***/ "./components/accordian.css":
+/*!**********************************!*\
+  !*** ./components/accordian.css ***!
+  \**********************************/
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
 // extracted by mini-css-extract-plugin
-module.exports = {"wrapper":"wrapper___4LrbD","alternateItems":"alternateItems___B4WMU","odds":"odds___1cgKS"};;
+module.exports = {"wrapper":"wrapper___3yMX7","title":"title___1nf0U","item":"item___3byWd","itemWrapper":"itemWrapper___1iU0Q","itemTitle":"itemTitle___olevx"};;
     if (true) {
       var injectCss = function injectCss(prev, href) {
         var link = prev.cloneNode();
@@ -30,7 +30,7 @@ module.exports = {"wrapper":"wrapper___4LrbD","alternateItems":"alternateItems__
           .querySelectorAll("link[href][rel=stylesheet]")
           .forEach(function(link) {
             if (!link.href.match(prefix) || link.stale) return;
-            injectCss(link, link.href.split("?")[0] + "?unix=1567732065554");
+            injectCss(link, link.href.split("?")[0] + "?unix=1568684451533");
           });
       }
     }
@@ -68,7 +68,45 @@ module.exports = {"bannerWrapper":"bannerWrapper___1QVkh","title":"title___lHFqs
           .querySelectorAll("link[href][rel=stylesheet]")
           .forEach(function(link) {
             if (!link.href.match(prefix) || link.stale) return;
-            injectCss(link, link.href.split("?")[0] + "?unix=1567642285721");
+            injectCss(link, link.href.split("?")[0] + "?unix=1568684418466");
+          });
+      }
+    }
+  
+
+/***/ }),
+
+/***/ "./components/carousel.css":
+/*!*********************************!*\
+  !*** ./components/carousel.css ***!
+  \*********************************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
+
+// extracted by mini-css-extract-plugin
+module.exports = {"carouselWrapper":"carouselWrapper___qz1ci","carousel":"carousel___2vM-W","imageWrapper":"imageWrapper___25qmt","left":"left___X6zI1","right":"right___1xStR","hideScroll":"hideScroll___2RBcv","image":"image___2KLfO"};;
+    if (true) {
+      var injectCss = function injectCss(prev, href) {
+        var link = prev.cloneNode();
+        link.href = href;
+        link.onload = function() {
+          prev.parentNode.removeChild(prev);
+        };
+        prev.stale = true;
+        prev.parentNode.insertBefore(link, prev);
+      };
+      module.hot.dispose(function() {
+        window.__webpack_reload_css__ = true;
+      });
+      if (window.__webpack_reload_css__) {
+        module.hot.__webpack_reload_css__ = false;
+        console.log("[HMR] Reloading stylesheets...");
+        var prefix = document.location.protocol + '//' + document.location.host;
+        document
+          .querySelectorAll("link[href][rel=stylesheet]")
+          .forEach(function(link) {
+            if (!link.href.match(prefix) || link.stale) return;
+            injectCss(link, link.href.split("?")[0] + "?unix=1568684418474");
           });
       }
     }
@@ -106,7 +144,7 @@ module.exports = {"contactFormWrapper":"contactFormWrapper___2j601","contactForm
           .querySelectorAll("link[href][rel=stylesheet]")
           .forEach(function(link) {
             if (!link.href.match(prefix) || link.stale) return;
-            injectCss(link, link.href.split("?")[0] + "?unix=1567730842521");
+            injectCss(link, link.href.split("?")[0] + "?unix=1568684418447");
           });
       }
     }
@@ -144,7 +182,7 @@ module.exports = {"footer":"footer___J0gcl","contacts":"contacts___oJsmQ","copyr
           .querySelectorAll("link[href][rel=stylesheet]")
           .forEach(function(link) {
             if (!link.href.match(prefix) || link.stale) return;
-            injectCss(link, link.href.split("?")[0] + "?unix=1567731240120");
+            injectCss(link, link.href.split("?")[0] + "?unix=1568684418478");
           });
       }
     }
@@ -182,7 +220,7 @@ module.exports = {"hamburgerContainer":"hamburgerContainer___xAdXq","menuIcon":"
           .querySelectorAll("link[href][rel=stylesheet]")
           .forEach(function(link) {
             if (!link.href.match(prefix) || link.stale) return;
-            injectCss(link, link.href.split("?")[0] + "?unix=1567729724788");
+            injectCss(link, link.href.split("?")[0] + "?unix=1568684418441");
           });
       }
     }
@@ -220,45 +258,7 @@ module.exports = {"textWrapper":"textWrapper___M84ax","bannerWrapper":"bannerWra
           .querySelectorAll("link[href][rel=stylesheet]")
           .forEach(function(link) {
             if (!link.href.match(prefix) || link.stale) return;
-            injectCss(link, link.href.split("?")[0] + "?unix=1567642285727");
-          });
-      }
-    }
-  
-
-/***/ }),
-
-/***/ "./components/horizontalTab.css":
-/*!**************************************!*\
-  !*** ./components/horizontalTab.css ***!
-  \**************************************/
-/*! no static exports found */
-/***/ (function(module, exports, __webpack_require__) {
-
-// extracted by mini-css-extract-plugin
-module.exports = {"wrapper":"wrapper___2DRkw","tabWrapper":"tabWrapper___3TpVS","tabContent":"tabContent___1dqzA","tab":"tab___UJjjn"};;
-    if (true) {
-      var injectCss = function injectCss(prev, href) {
-        var link = prev.cloneNode();
-        link.href = href;
-        link.onload = function() {
-          prev.parentNode.removeChild(prev);
-        };
-        prev.stale = true;
-        prev.parentNode.insertBefore(link, prev);
-      };
-      module.hot.dispose(function() {
-        window.__webpack_reload_css__ = true;
-      });
-      if (window.__webpack_reload_css__) {
-        module.hot.__webpack_reload_css__ = false;
-        console.log("[HMR] Reloading stylesheets...");
-        var prefix = document.location.protocol + '//' + document.location.host;
-        document
-          .querySelectorAll("link[href][rel=stylesheet]")
-          .forEach(function(link) {
-            if (!link.href.match(prefix) || link.stale) return;
-            injectCss(link, link.href.split("?")[0] + "?unix=1567642869676");
+            injectCss(link, link.href.split("?")[0] + "?unix=1568684418462");
           });
       }
     }
@@ -296,7 +296,7 @@ module.exports = {"menuList":"menuList___2ZlsW"};;
           .querySelectorAll("link[href][rel=stylesheet]")
           .forEach(function(link) {
             if (!link.href.match(prefix) || link.stale) return;
-            injectCss(link, link.href.split("?")[0] + "?unix=1567642285940");
+            injectCss(link, link.href.split("?")[0] + "?unix=1568684418617");
           });
       }
     }
@@ -334,7 +334,7 @@ module.exports = {"paragraphWrapper0":"paragraphWrapper0___3-2YW","image":"image
           .querySelectorAll("link[href][rel=stylesheet]")
           .forEach(function(link) {
             if (!link.href.match(prefix) || link.stale) return;
-            injectCss(link, link.href.split("?")[0] + "?unix=1567731150017");
+            injectCss(link, link.href.split("?")[0] + "?unix=1568684418456");
           });
       }
     }

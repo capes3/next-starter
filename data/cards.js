@@ -1,36 +1,43 @@
 const data = {
     "cards": [{
       "index":0,
-      "href":"/home",
-      "img":"https://picsum.photos/200"
+      "href":"/services",
+      "img":"https://picsum.photos/200",
+      "service": "service"
     },
     {
         "index":1,
-        "href":"/home",
-        "img":"https://picsum.photos/id/1/200"
+        "href":"/services",
+        "img":"https://picsum.photos/id/1/200",
+        "service": "service"
       },
       {
         "index":2,
-        "href":"/home",
-        "img":"https://picsum.photos/id/10/200"
+        "href":"/services",
+        "img":"https://picsum.photos/id/10/200",
+        "service": "service"
       },
       {
         "index":3,
-        "href":"/home",
-        "img":"https://picsum.photos/200"
+        "href":"/services",
+        "img":"https://picsum.photos/200",
+        "service": "service"
       },{
         "index":4,
-        "href":"/home",
-        "img":"https://picsum.photos/200"
+        "href":"/services",
+        "img":"https://picsum.photos/200",
+        "service": "service"
       },
       {
         "index":5,
-        "href":"/home",
-        "img":"https://picsum.photos/id/11/200"
+        "href":"/services",
+        "img":"https://picsum.photos/id/11/200",
+        "service": "service"
       },{
         "index":6,
-        "href":"/home",
-        "img":"https://picsum.photos/id/16/200"
+        "href":"/services",
+        "img":"https://picsum.photos/id/16/200",
+        "service": "service"
       }
     ]
   }

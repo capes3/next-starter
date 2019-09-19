@@ -54,7 +54,17 @@
 .image{
     flex: 20 0 auto;
     -webkit-overflow-scrolling: touch;
+    position: relative;
+    padding: 10px;
+}
 
+.image a {
+    position: absolute;
+    left: 20px;
+    top: 120px;
+    width: 100%;
+    color: white;
+    text-decoration: none;
 }
 
 

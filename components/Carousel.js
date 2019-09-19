@@ -32,6 +32,7 @@ class Carousel extends React.Component {
                   <Card img={item.img}
                         key={item.index}
                         link={item.href}
+                        service={item.service}
                         />
                   ))}
               </div>
